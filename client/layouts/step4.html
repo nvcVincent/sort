@@ -1,0 +1,73 @@
+<template name="step4Layout">
+
+<body>
+  {{> navigation}}
+  {{> step4}}
+  {{> footer}}
+</body>
+
+</template>
+
+
+<template name="step4">	
+<section id="step4" class="swrap">
+	<div class="title">
+		<div class="container">
+			<h1>After you sign up, you will receive an e-mail or phone call from us for verification.</h1>
+			<h3>It may take a while for the submition to be processed. We thank you for your patience and understanding.</h3>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<div class="step-title">Step 3: Fill in your contact details</div>
+
+		
+		<form>
+			<div class="col-sm-12">
+			  <div class="form-group">
+				<label for="formGroupExampleInput">Contact Person <span class="red">*</span></label>
+				<input type="text" class="form-control" id="formGroupExampleInput" placeholder=" " required>
+			  </div>
+			  
+			  
+			  <div class="form-group ctc">
+				<label for="formGroupExampleInput2">Contact Number <span class="red">*</span></label>
+				<input type="number" class="form-control" id="formGroupExampleInput2" placeholder=" " required>
+			  </div>			  
+			  <div class="info">
+				<p>If possible, please provide us your mobile phone number as we may send you job requests, notifications, and booking information from clients through SMS.</p>
+			  </div>
+			  
+			  
+			  <div class="form-group">
+				<label for="formGroupExampleInput">Email <span class="red">*</span></label>
+				<input type="text" class="form-control" id="formGroupExampleInput" placeholder=" " required>
+			  </div>
+			  <div class="form-group">
+				<label for="formGroupExampleInput2">Password <span class="red">*</span></label>
+				<input type="text" class="form-control" id="formGroupExampleInput2" placeholder=" " required>
+			  </div>
+			  <div class="form-group">
+				<label for="formGroupExampleInput">Password Confirmation <span class="red">*</span></label>
+				<input type="text" class="form-control" id="formGroupExampleInput" placeholder=" " required>
+			  </div>
+			</div>
+			
+			<div class="col-xs-12">
+					<div class="is-required">* is required</div>
+				
+				<div class="col-md-2">
+					<button type="submit" class="sign-button">Sign Up</button>
+				</div>
+				<div class="col-md-10">
+					<span class="tnp">By signing up an account, you agree to SortVille’s <a href="#">term and condition</a>, <a href="#">privacy policy</a> (include cookie policy).</span>
+				</div>
+			</div>
+
+		</form>
+		
+		
+	</div>
+</section>
+</template>

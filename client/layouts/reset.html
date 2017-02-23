@@ -1,0 +1,40 @@
+<template name="ResetLayout">
+
+<body>
+  {{> navigation}}
+  {{> reset}}
+  {{> footer}}
+</body>
+
+</template>
+
+
+<template name="reset">	
+<section id="login" class="swrap">
+	
+	<div class="container">
+	
+		<div class="content">
+		  <h3>Reset my...</h3>
+		
+				<div class="row reset">
+				<div class="col-xs-12">Password</div>
+					<div class="reset-container">
+						<form>
+							<div class="form-group">
+								<label for="formGroupExampleInput">Enter your email address associated with your account. We'll email you a link to your password.
+								</label>
+								<input type="text" class="form-control" id="formGroupExampleInput" placeholder=" ">
+							</div>
+							
+							<a href="#" class="reset-button">Send me the link</a>
+
+						</form>
+					</div>
+				</div>
+		
+		</div>
+
+	</div>
+</section>
+</template>

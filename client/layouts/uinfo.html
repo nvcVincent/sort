@@ -1,0 +1,156 @@
+<template name="UserInfoLayout">
+
+<body>
+  {{> afterloginnavigation}}
+  {{> uinfo}}
+  {{> footer}}
+</body>
+
+</template>
+
+
+<template name="uinfo">	
+<section id="user" class="dashboard swrap">
+
+	<div class="title">
+		<div class="container">
+			<h1><span class="user-name">SAMUEL</span>'S DETAILS</h1>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<div class="content">
+		
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+			<li role="presentation"><a href="#account" aria-controls="account" role="tab" data-toggle="tab">Account</a></li>
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="profile">
+			
+				<div class="col-sm-4 col-md-4">
+					<div class="p">Profile details</div>
+					
+					<div class="avatar">
+						<img src="img/user/avatar.jpg">
+					</div>
+					
+					<div class="upload-img">
+						<a href="#">Upload profile picture</a>
+					</div>
+					
+				</div>
+				
+				<div class="col-sm-8 col-md-8">
+					<form>
+					  <div class="form-group">
+						<label for="text">Name: <span class="red">*</span></label>
+						<input type="name" class="form-control" id="name" required>
+					  </div>
+					  <div class="form-group">
+						<label for="phone" class="phone">Contact Number: <span class="red">*</span></label>
+							<input type="number" class="form-control" id="phone" required>
+							
+					  </div>
+						
+						<span class="spacing red">* is required</span>
+						
+					  <button type="submit" class="btn btn-default">Save changes</button>
+					</form>
+				</div>
+			
+			</div>
+			
+			<div role="tabpanel" class="tab-pane" id="account">
+				<form>
+				<div class="col-xs-6 col-md-4">
+					<div class="p">Referral code</div>
+				</div>
+				
+				<div class="col-xs-12 col-md-8">
+					<div class="r-code">907820ACJ</div>
+				</div>
+				
+				<div class="spacing"></div>
+				
+				<div class="col-xs-6 col-md-4">
+					<div class="p">Account details</div>
+				</div>
+				
+				<div class="col-xs-12 col-md-8">					
+					  <div class="form-group">
+						<label for="text">Email address: <span class="red">*</span></label>
+						<input type="email" class="form-control" id="email" required>
+					  </div>
+					  
+					  <div class="col-md-6 pass">				
+						  <div class="form-group">
+							<label for="text">Password: <span class="red">*</span></label>
+							<input type="password" class="form-control" id="password" required>
+						  </div>
+					  </div>
+					  
+					  <div class="col-md-6 c-pass">				
+						  <div class="form-group">
+							<label for="text">Confirm password: <span class="red">*</span></label>
+							<input type="password" class="form-control" id="confirm-password" required>
+						  </div>
+					  </div>
+					  
+				</div>
+				
+				<div class="spacing"></div>
+				
+				<div class="col-xs-6 col-md-4 ns">
+					<div class="p">Notification settings</div>
+				</div>
+				
+				<div class="col-xs-12 col-md-8 s-l">
+					<div class="col-xs-4">
+					
+					</div>
+					
+					<div class="col-xs-4 ctr">
+						New messages
+					</div>
+					
+					<div class="col-xs-4 ctr">
+						New quotes
+					</div>
+					
+					<div class="d-btm">
+						<div class="col-xs-4">
+							Email
+						</div>
+						
+						<div class="col-xs-4 ctr">
+							<input type="checkbox" name="new-msg" value="New Messages">
+						</div>
+						
+						<div class="col-xs-4 ctr">
+							<input type="checkbox" name="new-quote" value="New Quotes">
+						</div>
+					</div>
+						
+						<span class="spacing red">* is required</span>
+						
+					  <button type="submit" class="btn btn-default">Save changes</button>
+					  
+						<div class="alert col-md-12">
+							<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+							Successfully save changes.
+						</div>
+				</div>
+				</form>
+			</div>
+		  </div>
+
+		</div>
+
+	</div>
+</section>
+</template>

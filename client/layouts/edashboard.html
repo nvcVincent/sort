@@ -1,0 +1,1277 @@
+<template name="EntertainerDashboardLayout">
+
+<body>
+  {{> afterloginnavigation}}
+  {{> dashboard}}
+  {{> footer}}
+</body>
+
+</template>
+
+
+<template name="dashboard">	
+<section id="entertainer-dash" class="dashboard swrap">
+
+	<div class="title">
+		<div class="container">
+			<h1><span class="entertainer-name">SORTVILLE</span>'S DASHBOARD</h1>
+			<div class="single-star-rating"><span data-toggle="modal" data-target="#star-info"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<div class="content">
+		
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#job-requests" aria-controls="job-requests" role="tab" data-toggle="tab">Job requests</a></li>
+			<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages <span class="total">99</span></a></li>
+			<li role="presentation" class="hide"><a href="#credits" aria-controls="messages" role="tab" data-toggle="tab">Credits <span class="total">999</span></a></li>
+			<li class="code desktop"><a href="#">Sortville's Code of Conduct</a></li>
+			<li class="tips desktop"><a href="#"><span data-toggle="modal" data-target="#thetips">Tips to Get Hired</span></a></li>
+			
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="job-requests">
+			
+				<div class="col-xs-2 blk"> 
+				  <!-- Nav tabs -->
+				  <ul class="nav nav-tabs tabs-left">
+					<li class="active"><a href="#new" data-toggle="tab">New <span class="n-total sub">3</span></a></li>
+					<li><a href="#quoted" data-toggle="tab">Quoted <span class="w-total sub">0</span></a></li>
+					<li><a href="#booked" data-toggle="tab">Booked <span class="p-total sub">0</span></a></li>
+					<li><a href="#completed" data-toggle="tab">Completed <span class="c-total sub">0</span></a></li>
+					<li><a href="#closed" data-toggle="tab">Closed <span class="c-total sub">0</span></a></li>
+				  </ul>
+				</div>
+				<div class="col-xs-10">
+					<!-- Tab panes -->
+					<div class="tab-content">
+					  <div class="tab-pane active" id="new">
+						<div class="col-sm-6">
+							<div class="t-title">New Requests</div>
+							<h3>Pick a quote</h3>
+						</div>
+						
+						<div class="col-sm-6">
+							<div class="input-group">
+							  <input type="text" class="form-control" placeholder="ID, Email, Name, Phone, Location">
+							  <span class="input-group-btn">
+								<button class="btn btn-default" type="button">Search</button>
+							  </span>
+							</div>
+						</div>
+						
+						<div class="spacing"></div>
+						
+						<!-- Bottom -->
+						<!-- Desktop View -->
+						<div class="b-title desktop">						
+							<div class="col-xs-1">
+								DATE
+							</div>
+							
+							<div class="col-xs-2">
+								REQUEST ID
+							</div>
+							
+							<div class="col-xs-2">
+								CUSTOMER NAME
+							</div>
+							
+							<div class="col-xs-2">
+								JOB REQUEST
+							</div>
+							
+							<div class="col-xs-2">
+								LOCATION
+							</div>
+							
+							<div class="col-xs-1 hidden">
+								CREDITS
+							</div>
+							
+							<div class="col-xs-2">
+								ACTION
+							</div>
+						</div>
+						
+						<!-- Desktop View End -->
+
+						<!-- Mobile View Start -->
+						
+						<div class="b-info break-list">
+							<div class="m-b-title cg mobile">DATE</div>
+							<div class="col-xs-1 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUEST ID</div>							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">92328</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">CUSTOMER NAME</div>	
+							<div class="col-xs-2 cg rg">
+								<span class="request">Peter Spaits</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">JOB REQUEST</div>	
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Personal Trainer</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">LOCATION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="place-needed">Bukit Bintang</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile hidden">CREDIT</div>
+							<div class="col-xs-1 wt rg hidden">								
+								<span class="amount-credit">6</span>
+							</div>	
+							
+							<div class="m-b-title cg mobile">ACTION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="viewquote"><button class="send-quotes" href="#">View quote</button></span>
+							</div>					
+						</div>
+						
+						<div class="b-info break-list white">
+							<div class="m-b-title cg mobile">DATE</div>
+							<div class="col-xs-1 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUEST ID</div>							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">92328</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">CUSTOMER NAME</div>	
+							<div class="col-xs-2 cg rg">
+								<span class="request">Peter Spaits</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">JOB REQUEST</div>	
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Personal Trainer</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">LOCATION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="place-needed">Bukit Bintang</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile hidden">CREDIT</div>
+							<div class="col-xs-1 wt rg hidden">								
+								<span class="amount-credit">6</span>
+							</div>	
+							
+							<div class="m-b-title cg mobile">ACTION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="viewquote"><button class="send-quotes" href="#">View quote</button></span>
+							</div>					
+						</div>						
+						
+						<div class="b-info break-list">
+							<div class="m-b-title cg mobile">DATE</div>
+							<div class="col-xs-1 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUEST ID</div>							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">92328</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">CUSTOMER NAME</div>	
+							<div class="col-xs-2 cg rg">
+								<span class="request">Peter Spaits</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">JOB REQUEST</div>	
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Personal Trainer</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">LOCATION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="place-needed">Bukit Bintang</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile hidden">CREDIT</div>
+							<div class="col-xs-1 wt rg hidden">								
+								<span class="amount-credit">6</span>
+							</div>	
+							
+							<div class="m-b-title cg mobile">ACTION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="viewquote"><button class="send-quotes" href="#">View quote</button></span>
+							</div>					
+						</div>
+						<!-- Mobile View End -->		
+				
+					  </div>
+					  <!-- New End -->
+					  
+					  <div class="tab-pane" id="quoted">
+						<div class="col-sm-6">
+							<div class="t-title">Quoted</div>
+						</div>
+						
+						<div class="col-sm-6">
+							<div class="input-group">
+							  <input type="text" class="form-control" placeholder="ID, Email, Name, Phone, Location">
+							  <span class="input-group-btn">
+								<button class="btn btn-default" type="button">Search</button>
+							  </span>
+							</div>
+						</div>
+						
+						<div class="spacing"></div>
+						
+						<!-- Bottom -->
+						<!-- Desktop View -->
+						<div class="b-title desktop">						
+							<div class="col-xs-1">
+								DATE
+							</div>
+							
+							<div class="col-xs-2">
+								REQUEST ID
+							</div>
+							
+							<div class="col-xs-2">
+								CUSTOMER NAME
+							</div>
+							
+							<div class="col-xs-2">
+								JOB REQUEST
+							</div>
+							
+							<div class="col-xs-2">
+								LOCATION
+							</div>
+							
+							<div class="col-xs-1 hidden">
+								CREDITS
+							</div>
+							
+							<div class="col-xs-2">
+								ACTION
+							</div>
+						</div>
+						
+						<!-- Desktop View End -->
+
+						<!-- Mobile View Start -->
+						
+						<div class="b-info break-list">
+							<div class="m-b-title cg mobile">DATE</div>
+							<div class="col-xs-1 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUEST ID</div>							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">92328</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">CUSTOMER NAME</div>	
+							<div class="col-xs-2 cg rg">
+								<span class="request">Peter Spaits</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">JOB REQUEST</div>	
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Personal Trainer</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">LOCATION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="place-needed">Bukit Bintang</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile hidden">CREDIT</div>
+							<div class="col-xs-1 wt rg hidden">								
+								<span class="amount-credit">6</span>
+							</div>	
+							
+							<div class="m-b-title cg mobile">ACTION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="viewquote"><button class="send-quotes" href="#">View quote</button></span>
+							</div>					
+						</div>
+						
+						<div class="b-info break-list white">
+							<div class="m-b-title cg mobile">DATE</div>
+							<div class="col-xs-1 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUEST ID</div>							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">92328</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">CUSTOMER NAME</div>	
+							<div class="col-xs-2 cg rg">
+								<span class="request">Peter Spaits</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">JOB REQUEST</div>	
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Personal Trainer</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">LOCATION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="place-needed">Bukit Bintang</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile hidden">CREDIT</div>
+							<div class="col-xs-1 wt rg hidden">								
+								<span class="amount-credit">6</span>
+							</div>	
+							
+							<div class="m-b-title cg mobile">ACTION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="viewqoute"><button class="send-quotes" href="#">View quote</button></span>
+							</div>					
+						</div>						
+						
+						<div class="b-info break-list">
+							<div class="m-b-title cg mobile">DATE</div>
+							<div class="col-xs-1 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUEST ID</div>							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">92328</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">CUSTOMER NAME</div>	
+							<div class="col-xs-2 cg rg">
+								<span class="request">Peter Spaits</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">JOB REQUEST</div>	
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Personal Trainer</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">LOCATION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="place-needed">Bukit Bintang</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile hidden">CREDIT</div>
+							<div class="col-xs-1 wt rg hidden">								
+								<span class="amount-credit">6</span>
+							</div>	
+							
+							<div class="m-b-title cg mobile">ACTION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="viewquote"><button class="send-quotes" href="#">View quote</button></span>
+							</div>					
+						</div>
+						<!-- Mobile View End -->		
+				
+					  </div>
+					  <!-- Quotes End -->
+					  
+					  <div class="tab-pane" id="booked">
+						<div class="col-sm-6">
+							<div class="t-title">Booked</div>
+						</div>
+						
+						<div class="col-sm-6">
+							<div class="input-group">
+							  <input type="text" class="form-control" placeholder="ID, Email, Name, Phone, Location">
+							  <span class="input-group-btn">
+								<button class="btn btn-default" type="button">Search</button>
+							  </span>
+							</div>
+						</div>
+						
+						<div class="spacing"></div>
+						
+						<!-- Bottom -->
+						<!-- Desktop View -->
+						<div class="b-title desktop">						
+							<div class="col-xs-1">
+								DATE
+							</div>
+							
+							<div class="col-xs-2">
+								REQUEST ID
+							</div>
+							
+							<div class="col-xs-2">
+								CUSTOMER NAME
+							</div>
+							
+							<div class="col-xs-2">
+								JOB REQUEST
+							</div>
+							
+							<div class="col-xs-2">
+								LOCATION
+							</div>
+							
+							<div class="col-xs-1 hidden">
+								CREDITS
+							</div>
+							
+							<div class="col-xs-2">
+								ACTION
+							</div>
+						</div>
+						
+						<!-- Desktop View End -->
+
+						<!-- Mobile View Start -->
+						
+						<div class="b-info break-list">
+							<div class="m-b-title cg mobile">DATE</div>
+							<div class="col-xs-1 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUEST ID</div>							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">92328</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">CUSTOMER NAME</div>	
+							<div class="col-xs-2 cg rg">
+								<span class="request">Peter Spaits</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">JOB REQUEST</div>	
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Personal Trainer</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">LOCATION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="place-needed">Bukit Bintang</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile hidden">CREDIT</div>
+							<div class="col-xs-1 wt rg hidden">								
+								<span class="amount-credit">6</span>
+							</div>	
+							
+							<div class="m-b-title cg mobile">ACTION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="viewquote"><button class="send-quotes" href="#">View quote</button></span>
+							</div>					
+						</div>
+						
+						<div class="b-info break-list white">
+							<div class="m-b-title cg mobile">DATE</div>
+							<div class="col-xs-1 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUEST ID</div>							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">92328</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">CUSTOMER NAME</div>	
+							<div class="col-xs-2 cg rg">
+								<span class="request">Peter Spaits</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">JOB REQUEST</div>	
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Personal Trainer</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">LOCATION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="place-needed">Bukit Bintang</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile hidden">CREDIT</div>
+							<div class="col-xs-1 wt rg hidden">								
+								<span class="amount-credit">6</span>
+							</div>	
+							
+							<div class="m-b-title cg mobile">ACTION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="viewquote"><button class="send-quotes" href="#">View quote</button></span>
+							</div>					
+						</div>						
+						
+						<div class="b-info break-list">
+							<div class="m-b-title cg mobile">DATE</div>
+							<div class="col-xs-1 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUEST ID</div>							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">92328</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">CUSTOMER NAME</div>	
+							<div class="col-xs-2 cg rg">
+								<span class="request">Peter Spaits</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">JOB REQUEST</div>	
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Personal Trainer</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">LOCATION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="place-needed">Bukit Bintang</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile hidden">CREDIT</div>
+							<div class="col-xs-1 wt rg hidden">								
+								<span class="amount-credit">6</span>
+							</div>	
+							
+							<div class="m-b-title cg mobile">ACTION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="viewquote"><button class="send-quotes" href="#">View quote</button></span>
+							</div>					
+						</div>
+						<!-- Mobile View End -->		
+				
+					  </div>
+					  <!-- Booked End -->
+					  
+					  <div class="tab-pane" id="completed">
+						<div class="col-sm-6">
+							<div class="t-title">Completed</div>
+						</div>
+						
+						<div class="col-sm-6">
+							<div class="input-group">
+							  <input type="text" class="form-control" placeholder="ID, Email, Name, Phone, Location">
+							  <span class="input-group-btn">
+								<button class="btn btn-default" type="button">Search</button>
+							  </span>
+							</div>
+						</div>
+						
+						<div class="spacing"></div>
+						
+						<!-- Bottom -->
+						<!-- Desktop View -->
+						<div class="b-title desktop">						
+							<div class="col-xs-1">
+								DATE
+							</div>
+							
+							<div class="col-xs-2">
+								REQUEST ID
+							</div>
+							
+							<div class="col-xs-2">
+								CUSTOMER NAME
+							</div>
+							
+							<div class="col-xs-2">
+								JOB REQUEST
+							</div>
+							
+							<div class="col-xs-2">
+								LOCATION
+							</div>
+							
+							<div class="col-xs-1 hidden">
+								CREDITS
+							</div>
+							
+							<div class="col-xs-2">
+								ACTION
+							</div>
+						</div>
+						
+						<!-- Desktop View End -->
+
+						<!-- Mobile View Start -->
+						
+<div class="b-info break-list">
+							<div class="m-b-title cg mobile">DATE</div>
+							<div class="col-xs-1 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUEST ID</div>							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">92328</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">CUSTOMER NAME</div>	
+							<div class="col-xs-2 cg rg">
+								<span class="request">Peter Spaits</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">JOB REQUEST</div>	
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Personal Trainer</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">LOCATION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="place-needed">Bukit Bintang</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile hidden">CREDIT</div>
+							<div class="col-xs-1 wt rg hidden">								
+								<span class="amount-credit">6</span>
+							</div>	
+							
+							<div class="m-b-title cg mobile">ACTION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="viewquote"><button class="send-quotes" href="#">View quote</button></span>
+							</div>					
+						</div>
+						
+						<div class="b-info break-list white">
+							<div class="m-b-title cg mobile">DATE</div>
+							<div class="col-xs-1 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUEST ID</div>							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">92328</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">CUSTOMER NAME</div>	
+							<div class="col-xs-2 cg rg">
+								<span class="request">Peter Spaits</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">JOB REQUEST</div>	
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Personal Trainer</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">LOCATION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="place-needed">Bukit Bintang</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile hidden">CREDIT</div>
+							<div class="col-xs-1 wt rg hidden">								
+								<span class="amount-credit">6</span>
+							</div>	
+							
+							<div class="m-b-title cg mobile">ACTION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="viewquote"><button class="send-quotes" href="#">View quote</button></span>
+							</div>					
+						</div>						
+						
+						<div class="b-info break-list">
+							<div class="m-b-title cg mobile">DATE</div>
+							<div class="col-xs-1 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUEST ID</div>							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">92328</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">CUSTOMER NAME</div>	
+							<div class="col-xs-2 cg rg">
+								<span class="request">Peter Spaits</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">JOB REQUEST</div>	
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Personal Trainer</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">LOCATION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="place-needed">Bukit Bintang</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile hidden">CREDIT</div>
+							<div class="col-xs-1 wt rg hidden">								
+								<span class="amount-credit">6</span>
+							</div>	
+							
+							<div class="m-b-title cg mobile">ACTION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="viewquote"><button class="send-quotes" href="#">View quote</button></span>
+							</div>					
+						</div>
+						<!-- Mobile View End -->		
+				
+					  </div>
+					  <!-- Completed End -->
+					  
+					  <div class="tab-pane" id="closed">
+						<div class="col-sm-6">
+							<div class="t-title">Closed</div>
+						</div>
+						
+						<div class="col-sm-6">
+							<div class="input-group">
+							  <input type="text" class="form-control" placeholder="ID, Email, Name, Phone, Location">
+							  <span class="input-group-btn">
+								<button class="btn btn-default" type="button">Search</button>
+							  </span>
+							</div>
+						</div>
+						
+						<div class="spacing"></div>
+						
+						<!-- Bottom -->
+						<!-- Desktop View -->
+						<div class="b-title desktop">						
+							<div class="col-xs-1">
+								DATE
+							</div>
+							
+							<div class="col-xs-2">
+								REQUEST ID
+							</div>
+							
+							<div class="col-xs-2">
+								CUSTOMER NAME
+							</div>
+							
+							<div class="col-xs-2">
+								JOB REQUEST
+							</div>
+							
+							<div class="col-xs-2">
+								LOCATION
+							</div>
+							
+							<div class="col-xs-1 hidden">
+								CREDITS
+							</div>
+							
+							<div class="col-xs-2">
+								ACTION
+							</div>
+						</div>
+						
+						<!-- Desktop View End -->
+
+						<!-- Mobile View Start -->
+						
+<div class="b-info break-list">
+							<div class="m-b-title cg mobile">DATE</div>
+							<div class="col-xs-1 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUEST ID</div>							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">92328</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">CUSTOMER NAME</div>	
+							<div class="col-xs-2 cg rg">
+								<span class="request">Peter Spaits</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">JOB REQUEST</div>	
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Personal Trainer</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">LOCATION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="place-needed">Bukit Bintang</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile hidden">CREDIT</div>
+							<div class="col-xs-1 wt rg hidden">								
+								<span class="amount-credit">6</span>
+							</div>	
+							
+							<div class="m-b-title cg mobile">ACTION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="viewquote"><button class="send-quotes" href="#">View quote</button></span>
+							</div>					
+						</div>
+						
+						<div class="b-info break-list white">
+							<div class="m-b-title cg mobile">DATE</div>
+							<div class="col-xs-1 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUEST ID</div>							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">92328</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">CUSTOMER NAME</div>	
+							<div class="col-xs-2 cg rg">
+								<span class="request">Peter Spaits</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">JOB REQUEST</div>	
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Personal Trainer</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">LOCATION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="place-needed">Bukit Bintang</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile hidden">CREDIT</div>
+							<div class="col-xs-1 wt rg hidden">								
+								<span class="amount-credit">6</span>
+							</div>	
+							
+							<div class="m-b-title cg mobile">ACTION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="viewquote"><button class="send-quotes" href="#">View quote</button></span>
+							</div>					
+						</div>						
+						
+						<div class="b-info break-list">
+							<div class="m-b-title cg mobile">DATE</div>
+							<div class="col-xs-1 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUEST ID</div>							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">92328</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">CUSTOMER NAME</div>	
+							<div class="col-xs-2 cg rg">
+								<span class="request">Peter Spaits</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">JOB REQUEST</div>	
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Personal Trainer</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">LOCATION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="place-needed">Bukit Bintang</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile hidden">CREDIT</div>
+							<div class="col-xs-1 wt rg hidden">								
+								<span class="amount-credit">6</span>
+							</div>	
+							
+							<div class="m-b-title cg mobile">ACTION</div>
+							<div class="col-xs-2 cg rg">								
+								<span class="viewquote"><button class="send-quotes" href="#">View quote</button></span>
+							</div>					
+						</div>
+						<!-- Mobile View End -->		
+				
+					  </div>
+					  <!-- Closed End -->
+					  
+					</div>
+			
+				</div>
+			</div>
+			
+			<div role="tabpanel" class="tab-pane" id="messages">
+				
+				
+					<div class="col-sm-3"> 
+					  <!-- Nav tabs -->
+					  <ul class="nav nav-tabs tabs-left">
+						<li class="active" id="alt"><a href="#msg1" data-toggle="tab"><span class="s-avatar"><img src="img/user/avatar1.png"> Jennifer</span></a></li>
+						<li><a href="#msg2" data-toggle="tab"><span class="s-avatar"><img src="img/user/avatar2.png"> Shila Amzah</span></a></li>
+						<li id="alt"><a href="#msg3" data-toggle="tab"><span class="s-avatar"><img src="img/user/avatar3.png"> Steve</span></a></li>
+					  </ul>
+					</div>
+					<div class="col-sm-9 ctn">
+						<!-- Tab panes -->
+						<div class="tab-content">
+						  <div class="tab-pane active" id="msg1">
+							<div class="col-sm-12">
+								<div class="sender-name">
+									<span class="s-avatar"><img src="img/user/avatar1.png"> Jennifer</span>	
+										
+										<button class="orange-btn" href="#">View quote</button>
+										<button class="red-btn" href="#">Report</button>
+									
+								</div>
+							</div>
+							
+							<div class="ext spacing"></div>
+							
+							<!-- Bottom -->
+
+							<div class="conversation">
+								
+								<p class="triangle-border left">Hi, How are you? I am looking for singer near Bukit Bintang<span class="date-time">15/03 08.11AM</span></p>
+							
+								<div class="conversation-spacing"></div>
+							
+								<p class="triangle-border right">Got it, let's discuss.<span class="date-time">15/03 08.11AM</span></p>
+								
+							</div>
+							
+							<div class="conversation-send">
+								
+								<div class="input-group">
+								  <input type="text" class="form-control">
+								  <span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+								  </span>
+								</div>
+								
+							</div>
+							
+							<!-- Bottom End -->
+					
+					
+						  </div>
+						  
+						  <div class="tab-pane" id="msg2">
+							<div class="col-sm-12">
+								<div class="sender-name">
+									<span class="s-avatar"><img src="img/user/avatar2.png"> Shila Amzah</span>	
+										
+										<button class="orange-btn" href="#">View quote</button>
+										<button class="red-btn" href="#">Report</button>
+									
+								</div>
+							</div>
+							
+							<div class="ext spacing"></div>
+							
+							<!-- Bottom -->
+
+							<div class="conversation">
+							
+								<p class="triangle-border right">Hey, when are you available? Hey, when are you available?
+								<span class="date-time">15/03 08.11AM</span></p>
+							
+								<div class="conversation-spacing"></div>
+								
+								<p class="triangle-border left">Hi, I will only be available next month.<span class="date-time">15/03 08.11AM</span></p>
+								
+							</div>
+							
+							<div class="conversation-send">
+								
+								<div class="input-group">
+								  <input type="text" class="form-control">
+								  <span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+								  </span>
+								</div>
+								
+							</div>
+							
+							<!-- Bottom End -->
+						  
+						  </div>
+						  
+						  <div class="tab-pane" id="msg3">
+							<div class="col-sm-12">
+								<div class="sender-name">
+									<span class="s-avatar"><img src="img/user/avatar3.png"> Stephen Colbert</span>
+										
+										<button class="orange-btn" href="#">View quote</button>
+										<button class="red-btn" href="#">Report</button>
+									
+								</div>
+							</div>
+							
+							<div class="ext spacing"></div>
+							
+							<!-- Bottom -->
+
+							<div class="conversation">
+							
+								<p class="triangle-border right">Hey, when are you available?<span class="date-time">15/03 08.11AM</span></p>
+							
+								<div class="conversation-spacing"></div>
+								
+								<p class="triangle-border left">Hi, I will only be available next month.<span class="date-time">15/03 08.11AM</span></p>
+								
+							</div>
+							
+							<div class="conversation-send">
+								
+								<div class="input-group">
+								  <input type="text" class="form-control">
+								  <span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+								  </span>
+								</div>
+								
+							</div>
+							
+							<!-- Bottom End -->
+						  
+						  </div>
+						</div>
+					</div>
+					
+					<div class="btm-spacing"></div>
+				
+			</div>
+			
+
+			<div role="tabpanel" class="tab-pane" id="credits">
+				
+			<div class="col-xs-12">
+				<div class="col-sm-6 listing-from">
+					Listing from <input type="text" id="datepicker" placeholder="27/02/2016"> to <input type="text" id="datepickerend" placeholder="27/03/2016">
+				</div>
+				
+				
+				<div class="col-sm-6 filter input-group">
+				  <input type="text" class="form-control" placeholder="Reference number">
+				  <span class="input-group-btn">
+					<button class="btn btn-default" type="button">Filter</button>
+				  </span>
+				</div>
+				
+				
+				<div class="small-tile">Credit</div>
+				
+					<div class="spacing"></div>
+						
+					<!-- Bottom -->
+					<!-- Desktop View -->
+					<div class="b-title desktop">						
+						<div class="col-xs-2">
+							DATE
+						</div>
+						
+						<div class="col-xs-3">
+							REFERENCE NUM
+						</div>
+						
+						<div class="col-xs-1">
+						</div>
+						
+						<div class="col-xs-2">
+							IN (CREDITS)
+						</div>
+						
+						<div class="col-xs-2">
+							OUT (CREDITS)
+						</div>
+						
+						<div class="col-xs-2">							
+							BALANCE (CREDITS)
+						</div>
+					</div>
+						
+					<!-- Desktop View End -->
+					
+					<div class="b-info white grey">
+						<div class="m-b-title cg mobile">DATE</div>						
+						<div class="col-xs-2 cg rg">
+							<span class="ddate">15 Mar 2016</span><br/>
+							<span class="dtime">15:50pm</span>
+						</div>
+							
+							
+						<div class="m-b-title wt mobile">REFERENCE NUM</div>
+						
+						<div class="col-xs-3 wt rg">
+							<span class="referene">QC2-2321123</span>
+						</div>
+						
+						<div class="col-xs-1 desktop">
+						</div>
+						
+							
+						<div class="m-b-title cg mobile">IN (CREDITS)</div>	
+						
+						<div class="col-xs-2 cg rg">
+							<span class="in-request">6</span>
+						</div>
+						
+							
+						<div class="m-b-title wt mobile">OUT (CREDITS)</div>	
+						
+						<div class="col-xs-2 wt rg">
+							<span class="service-type">0</span>
+						</div>
+						
+							
+						<div class="m-b-title cg mobile">BALANCE (CREDITS)</div>	
+						
+						<div class="col-xs-2 cg rg">							
+							<span class="date-needed">3</span>
+						</div>		
+					</div>
+					
+					<div class="b-info white grey">
+						<div class="m-b-title cg mobile">DATE</div>						
+						<div class="col-xs-2 cg rg">
+							<span class="ddate">15 Mar 2016</span><br/>
+							<span class="dtime">15:50pm</span>
+						</div>
+							
+							
+						<div class="m-b-title wt mobile">REFERENCE NUM</div>
+						
+						<div class="col-xs-3 wt rg">
+							<span class="referene">QC2-2321123</span>
+						</div>
+						
+						<div class="col-xs-1 desktop">
+						</div>
+						
+							
+						<div class="m-b-title cg mobile">IN (CREDITS)</div>	
+						
+						<div class="col-xs-2 cg rg">
+							<span class="in-request">6</span>
+						</div>
+						
+							
+						<div class="m-b-title wt mobile">OUT (CREDITS)</div>	
+						
+						<div class="col-xs-2 wt rg">
+							<span class="service-type">0</span>
+						</div>
+						
+							
+						<div class="m-b-title cg mobile">BALANCE (CREDITS)</div>	
+						
+						<div class="col-xs-2 cg rg">							
+							<span class="date-needed">3</span>
+						</div>		
+					</div>
+					
+
+					
+				
+			</div>
+		  </div>
+
+		</div>
+
+	</div>
+	
+<!-- Modal -->
+<div id="thetips" class="modal fade" role="dialog">
+	<div class="tips modal-dialog">
+	
+		<div class="container">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4>How to get hired</h4>
+			
+			<div class="col-sm-6">
+				<div class="box2">
+					<h3>Tip #1</h3>
+					
+					<p>Build a Winning Profile</p>
+					
+					<ul>
+						<li>Promote your experience and skills.</li>					
+						<li>Talk about your qualifications, certifications, licenses, etc.</li>						
+						<li>Include photographs of yourself and your work.</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="col-sm-6">
+				<div class="box2">
+					<h3>Tip #2</h3>
+					
+					<p>Provide a Great Service & Ask for Reviews</p>
+					
+					<ul>
+						<li>Respond quickly with your quotation</li>
+						<li>Always follow up with the customer</li>
+						<li>Ask for reviews from customers.</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="invisible-spacing"></div>
+			
+			<div class="col-sm-6">
+				<div class="box2">
+					<h3>Tip #3</h3>
+					
+					<p>Make a Personal Connection</p>
+					
+					<ul>
+						<li>Be clear & professional in your intro to the customer</li>
+						<li>Give a detailed, accurate and competitive quote</li>
+						<li>If you can't quote, give an estimate or price range</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="col-sm-6">
+				<div class="box2">
+					<h3>Tip #4</h3>
+					
+					<p>Follow Up</p>
+					
+					<ul>
+						<li>Follow up with the customer after sending a quote</li>
+						<li>Keep trying. Persistence is key</li>
+						<li>Ask us for help if needed. We're happy to assist</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="invisible-spacing pop-btm"></div>
+			
+		</div>
+		
+	</div>
+</div>
+
+<!-- Star Rate Popup -->
+<div id="star-info" class="modal fade" role="dialog">
+	<div class="star-rate-info modal-dialog">
+	
+		<div class="container">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			Info Info Info Info Info			
+		</div>
+		
+	</div>
+</div>	
+
+</div>		
+</section>
+</template>

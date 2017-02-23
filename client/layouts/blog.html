@@ -1,0 +1,197 @@
+<template name="BlogLayout">
+
+<body>
+  {{> navigation}}
+  {{> blog}}
+  {{> footer}}
+</body>
+
+</template>
+
+
+<template name="blog">	
+<section id="blog" class="swrap">
+	
+	<div class="container">
+	
+		<div class="title-img">
+			<a href="#"><div class="b-logo"></div></a>
+		</div>
+	
+		<div class="ht">
+			<div class="col-md-7">
+				<!-- Sub Category Link -->	
+				<ul class="cat-link">
+					<li><a href="#">Link 1</a></li>
+					<li><a href="#">Link 2</a></li>
+					<li><a href="#">Link 3</a></li>
+					<li><a href="#">Link 4</a></li>
+				</ul>
+			</div>
+			
+			<div class="col-md-5">
+				<div class="social col-md-7">
+					<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</div>
+							
+				<div class="search col-md-5">
+					<input type="text">
+					<button type="submit">
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</button>  
+				</div>
+					
+			</div>
+		</div>
+		
+		<div class="btm">
+			<div class="col-md-9">
+				<div class="btop">
+					<img src="img/sample.jpg">
+				</div>
+				
+				<div class="bbelow">
+					<div class="col-sm-6 left">
+						<img src="img/sample.jpg">
+						
+						<div class="cat">
+							<a href="#">Uncategorized</a>
+						</div>
+						
+						<h3>It is a long establish fact that</h3>
+						<div class="line"></div>
+						
+						<p>A reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+						
+						<div class="cont"><a href="#">Continue Reading</a></div>
+						
+						<div class="info">
+							<div class="col-xs-6 left">
+								<i class="fa fa-clock-o" aria-hidden="true"></i> June 8, 2016 by <a href="#">Samuel</a>
+							</div>
+							
+							<div class="col-xs-6 right">								
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-6 right">
+						<img src="img/sample.jpg">
+						
+						<div class="cat">
+							<a href="#">Update</a>
+							<a href="#">News</a>
+						</div>
+						
+						<h3>It is a long establish fact that It is a long establish fact that</h3>
+						<div class="line"></div>
+						
+						<p>A reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+						
+						<div class="cont"><a href="#">Continue Reading</a></div>
+						
+						<div class="info">
+							<div class="col-xs-6 left">
+								<i class="fa fa-clock-o" aria-hidden="true"></i> June 8, 2016 by <a href="#">Samuel</a>
+							</div>
+							
+							<div class="col-xs-6 right">								
+								<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+								<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+							</div>
+						</div>
+							
+					</div>	
+				</div>	
+
+				<div class="counter">
+					<div class="col-xs-8 col-md-8 no">
+						<a class="active">1</a>
+						<a>2</a>
+						<a>...</a>
+						<a>20</a>
+					</div>
+			
+					<div class="col-xs-4 col-md-4">
+						<a href="#">OLDER POSTS</a>
+					</div>
+				</div>	
+
+				<div class="explore">
+					<div class="title"><span>EXPLORE CATEGORIES</span></div>
+					
+					<div class="col-sm-4">
+						<a href="">
+							<img src="img/sample.jpg">
+						</a>
+					</div>
+					
+					<div class="col-sm-4">
+						<a href="">
+							<img src="img/sample.jpg">
+						</a>
+					</div>
+					
+					<div class="col-sm-4">
+						<a href="">
+							<img src="img/sample.jpg">
+						</a>
+					</div>					
+				</div>
+				
+				<div class="love">
+					Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#">SortVille.com</a>. All Rights Reserved 2016. 
+				</div>
+			</div>
+			
+			<div class="col-md-3">
+				<div class="about">
+					<div class="title"><span>ABOUT US</span></div>
+					<img src="img/s-logo.png">
+					<div class="desc">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...<a href="#">more</a>
+					</div>
+				</div>
+								
+				<div class="fb">
+					<div class="title"><span>FACEBOOK</span></div>
+					<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook&tabs=timeline&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				</div>
+								
+				<div class="instagram">
+					<div class="title"><span>INSTAGRAM</span></div>
+					<!-- Instagram Code Put Here -->
+					<a href="#">Follow us on Instagram</a>
+				</div>
+								
+				<div class="archives">
+					<div class="title"><span>ARCHIVES</span></div>
+					
+					<div class="form-group">	
+						<select class="form-control" onchange="location = this.value;">
+							<option value="" disabled selected>Select Month</option>
+							<option value="#">Jan</option>
+							<option value="#">Feb</option>
+							<option value="#">March</option>
+							<option value="#">April</option>
+							<option value="#">May</option>
+							<option value="#">Jun</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</template>

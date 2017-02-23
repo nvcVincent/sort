@@ -1,0 +1,217 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Entertainers for Rent</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	
+	
+	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<template name="navigation">
+    <!-- Navigation -->
+	<div id="top-header">
+    <div class="container">
+		<a class="logo" href="/">logo</a>
+		<div class="top-login">
+			<a href="#">
+				<span data-toggle="modal" data-target="#myLogin">LOGIN</span><i data-toggle="modal" data-target="#myLogin" class="mobile fa fa-sign-in" aria-hidden="true"></i>
+			</a>
+		</div>
+
+		<!-- Login Modal -->
+		<div id="myLogin" class="modal fade" role="dialog">
+				<div class="content">
+				  <h3>Logging in as...</h3>
+				
+				  <!-- Nav tabs -->
+				  <ul class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="active"><a href="#user" aria-controls="user" role="tab" data-toggle="tab">User</a></li>
+					<li role="presentation"><a href="#entertainer" aria-controls="entertainer" role="tab" data-toggle="tab">Entertainer</a></li>
+				  </ul>
+
+				  <!-- Tab panes -->
+				  <div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="user">
+					
+						<div class="row">
+							<div class="fb-login">
+								<a href="#">Login with Facebook</a>
+							</div>
+							
+							<div class="separator"><span>OR</span></div>
+							
+							<form>
+								<div class="form-group">
+									<label for="formGroupExampleInput">Email</label>
+									<input type="text" class="form-control" id="formGroupExampleInput" placeholder=" ">
+								</div>
+								<div class="form-group">
+									<label for="formGroupExampleInput2">Password</label>
+									<input type="text" class="form-control" id="formGroupExampleInput2" placeholder=" ">
+								</div>
+								<a class="forget">Forget Password</a>
+								
+								<a href="#" class="login-button">Login</a>
+
+							</form>
+
+							<div id="sign-up">If you're new to SortVille, <a class="sign-up" href="#">sign up here!</a></div>
+						</div>
+					
+					</div>
+					
+					<div role="tabpanel" class="tab-pane" id="entertainer">
+						
+						<div class="row">
+							
+							<form>
+								<div class="form-group">
+									<label for="formGroupExampleInput">Email</label>
+									<input type="text" class="form-control" id="formGroupExampleInput" placeholder=" ">
+								</div>
+								<div class="form-group">
+									<label for="formGroupExampleInput2">Password</label>
+									<input type="text" class="form-control" id="formGroupExampleInput2" placeholder=" ">
+								</div>
+								<a class="forget">Forget Password</a>
+								
+								<a href="#" class="login-button">Login</a>
+
+							</form>
+
+							<div id="sign-up">If you're new to SortVille, <a class="sign-up" href="#">sign up here!</a></div>
+						</div>
+						
+					</div>
+				  </div>
+
+				</div>
+		</div>
+	</div>
+	</div>
+</template>
+
+
+<template name="afterloginnavigation">
+    <!-- Navigation -->
+	<div id="top-header">
+    <div class="container">
+		<a class="logo" href="/">logo</a>
+		<div class="top-login dropdown">
+			<a href="#" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<img class="user-avatar" src="img/face.png"><span class="user-name">Samuel</span><i class="fa fa-angle-down" aria-hidden="true"></i>
+			</a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			<a class="dropdown-item" href="#"><i class="fa fa-desktop" aria-hidden="true"></i> Dashboard</a>
+			<a class="dropdown-item" href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Profile</a>
+			<a class="dropdown-item" href="#"><i class="fa fa-file-o" aria-hidden="true"></i> View My Profile</a>
+			<a class="dropdown-item" href="#"><i class="fa fa-spinner" aria-hidden="true"></i> Reset Password</a>
+			<a class="dropdown-item" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a>
+		  </div>
+		</div>
+	</div>
+	</div>
+</template>
+
+
+<template name="footer">
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+			
+				<div class="col-md-4">
+					<div class="title">About Us</div>
+					<img class="logo" src="img/logo-bottom.png">
+					
+					<div class="desc">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...<a href="#">more</a>
+					</div>
+				</div>
+			
+				<div class="col-md-4">
+					<div class="title">More Information</div>
+					
+					<ul>
+						<li><a href="">Get Your Service Discovered</a></li>
+						<li><a href="">Terms of Use</a></li>
+						<li><a href="">Privacy Policy</a></li>
+						<li><a href="">Knowledge Center</a></li>
+						<li><a href="">Frequently Asked Questions</a></li>
+					</ul>
+				</div>
+			
+				<div class="col-md-4">
+					
+					<div class="contact">
+						<div class="title">Contact Us</div>
+						
+						<div>
+							<i class="fa fa-envelope"></i> contact@sortville.com
+						</div>
+						
+						<div>
+							<i class="fa fa-phone"></i> 012-3456789
+						</div>
+					</div>
+					
+					<div class="follow">
+						<div class="title">Follow Us</div>
+						
+							<a href=""><i class="fa fa-facebook"></i></a>
+							<a href=""><i class="fa fa-instagram"></i></a>
+							<a href=""><i class="fa fa-twitter"></i></a>
+							<a href=""><i class="fa fa-linkedin"></i></a>
+							<a href=""><i class="fa fa-google-plus"></i></a>
+					</div>
+				</div>
+			</div>
+			
+            <div class="row">			
+				<div class="col-md-4 btm">
+			
+					<div class="copy">
+						Sortville 2016 All rights reserved
+					</div>
+					
+				</div>
+			</div>
+		</div>
+				
+
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.js"></script>		
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>	
+</template>

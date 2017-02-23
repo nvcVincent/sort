@@ -1,0 +1,86 @@
+<template name="LoginLayout">
+
+<body>
+  {{> navigation}}
+  {{> login}}
+  {{> footer}}
+</body>
+
+</template>
+
+
+<template name="login">	
+<section id="login" class="swrap">
+	
+	<div class="container">
+	
+		<div class="content">
+		  <h3>Logging in as...</h3>
+		
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#users" aria-controls="user" role="tab" data-toggle="tab">User</a></li>
+			<li role="presentation"><a href="#entertainers" aria-controls="entertainer" role="tab" data-toggle="tab">Entertainer</a></li>
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="users">
+			
+				<div class="row">
+					<div class="fb-login">
+						<a href="#">Login with Facebook</a>
+					</div>
+					
+					<div class="separator"><span>OR</span></div>
+					
+					<form>
+						<div class="form-group">
+							<label for="formGroupExampleInput">Email</label>
+							<input type="text" class="form-control" id="formGroupExampleInput" placeholder=" ">
+						</div>
+						<div class="form-group">
+							<label for="formGroupExampleInput2">Password</label>
+							<input type="text" class="form-control" id="formGroupExampleInput2" placeholder=" ">
+						</div>
+						<a class="forget">Forget Password</a>
+						
+						<a href="#" class="login-button">Login</a>
+
+					</form>
+
+					<div id="sign-up">If you're new to SortVille, <a class="sign-up" href="#">sign up here!</a></div>
+				</div>
+			
+			</div>
+			
+			<div role="tabpanel" class="tab-pane" id="entertainers">
+				
+				<div class="row">
+					
+					<form>
+						<div class="form-group">
+							<label for="formGroupExampleInput">Email</label>
+							<input type="text" class="form-control" id="formGroupExampleInput" placeholder=" ">
+						</div>
+						<div class="form-group">
+							<label for="formGroupExampleInput2">Password</label>
+							<input type="text" class="form-control" id="formGroupExampleInput2" placeholder=" ">
+						</div>
+						<a class="forget">Forget Password</a>
+						
+						<a href="#" class="login-button">Login</a>
+
+					</form>
+
+					<div id="sign-up">If you're new to SortVille, <a class="sign-up" href="#">sign up here!</a></div>
+				</div>
+				
+			</div>
+		  </div>
+
+		</div>
+
+	</div>
+</section>
+</template>

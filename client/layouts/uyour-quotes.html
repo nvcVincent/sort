@@ -1,0 +1,523 @@
+<template name="YourQuotesLayout">
+
+<body>
+  {{> afterloginnavigation}}
+  {{> yourquotes}}
+  {{> footer}}
+</body>
+
+</template>
+
+
+<template name="yourquotes">	
+<section id="your-quotes" class="dashboard swrap">
+	
+	<div class="container">
+		<h3>Your quotes...</h3>
+	
+		<div class="col-md-4">
+			<div class="blk"> 
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs tabs-left">
+					<li class="active"><a href="#comp1" data-toggle="tab">
+						<div class="l1"><img class="company-avatar" src="img/user/comp.png"></div>
+						
+						<div class="l2">
+							<span class="comp-name">DE FAM DE FAM DE FAM DE FAM DE FAM</span><br><span class="star-rating"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></span>
+						</div>
+						
+						<div class="l3"><span class="price">RM200, 000</span><br/><span class="timing">hourly</span></div>
+					
+					</a></li>
+					<li><a href="#comp2" data-toggle="tab">
+						<div class="l1"><img class="company-avatar" src="img/user/comp.png"></div>
+						
+						<div class="l2"><span class="comp-name">COMP2</span><br><span class="star-rating"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-star-o" aria-hidden="true"></i></span></div>
+						
+						<div class="l3"><span class="price">RM12,000</span><br/><span class="timing">lumpsum</span></div>
+					
+					</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<div class="col-md-8">
+			<div class="tab-content">
+			  <div class="tab-pane active" id="comp1">
+				
+				<div class="row">
+					<div class="comp-title"><h2>DE FAM</h2></div>
+					<div class="view-link"><a href="#">View Profile</a></div>
+				</div>
+				
+				<div class="row">
+					<div class="star-rating-single"><i class="fa fa-star" aria-hidden="true"></i></div>
+				</div>
+				
+				<div class="row">
+					<div class="details">
+					
+						<i class="fa fa-user" aria-hidden="true"></i> Azira
+							<br/>
+						<i class="fa fa-globe" aria-hidden="true"></i> <a class="comp-web" href="#">Visit my website</a>
+						
+					</div>
+					
+					<div class="single-comp-price">
+						<span class="price">RM20</span><br/><span class="timing">hourly</span>
+					</div>
+						
+				</div>
+				
+				<div class="row">
+					<p class="desc">Hi there,<br/>Fusce sed ultrices leo, non tristique nibh. Mauris mollis sagittis odio, vel congue arcu rutrum ut. Etiam accumsan, dolor vitae euismod scelerisque, enim felis consectetur tortor, et scelerisque orci mi ac sapien. Maecenas tincidunt tellus ac quam lacinia, at sodales felis fringilla. Morbi quam erat, mollis in laoreet a, dignissim sit amet odio. Donec semmi, ullamcorper sit amet risus vitae, fermentum viverra lorem. Maecenas convallis fringilla accumsan.
+					</p>
+				</div>
+				
+				<div class="row">
+					<a href="" class="view-attachment">View Attachment</a>
+				</div>
+				
+				<div class="row review-tab">
+					<h4>Reviews</h4>
+					<div class="desktop">
+						<div class="col-xs-6">
+							<div class="star-rating">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							
+							<div class="review-text">
+								Fusce sed ultrices leo, non tristique nibh. Mauris mollis sagittis odio, vel congue arcu rutrum ut. Etiam accumsan, dolor vitae euismod scelerisque, enim felis consectetur tortor, et scelerisque orci mi ac sapien. Maecenas tincidunt tellus ac quam lacinia, at sodales felis fringilla. Morbi quam erat, mollis in laoreet a, dignissim sit amet odio. Donec semmi, ullamcorper sit amet risus vitae, fermentum viverra lorem. Maecenas convallis fringilla accumsan.
+							</div>
+							
+							<div class="reviewer">
+								- <span class="name">Ms. Chang</span>, <span class="date">21 May 2016</span>
+							</div>
+								
+						</div>
+						
+						<div class="col-xs-6">
+							<div class="star-rating">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							
+							<div class="review-text">
+								Fusce sed ultrices leo, non tristique nibh. Mauris mollis sagittis odio, vel congue arcu rutrum ut. Etiam accumsan, dolor vitae euismod scelerisque, enim felis consectetur tortor, et scelerisque orci mi ac sapien. Maecenas tincidunt tellus ac quam lacinia, at sodales felis fringilla. Morbi quam erat, mollis in laoreet a, dignissim sit amet odio. Donec semmi, ullamcorper sit amet risus vitae, fermentum viverra lorem. Maecenas convallis fringilla accumsan.
+							</div>
+							
+							<div class="reviewer">
+								- <span class="name">Ms. Kum</span>, <span class="date">21 July 2016</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="mobile">
+					
+										<!-- Slider -->
+						<div id="what-slider" class="carousel slide mobile">
+
+							<!-- Wrapper for Slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="star-rating">
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+									
+									<div class="review-text">
+										Fusce sed ultrices leo, non tristique nibh. Mauris mollis sagittis odio, vel congue arcu rutrum ut. Etiam accumsan, dolor vitae euismod scelerisque, enim felis consectetur tortor, et scelerisque orci mi ac sapien. Maecenas tincidunt tellus ac quam lacinia, at sodales felis fringilla. Morbi quam erat, mollis in laoreet a, dignissim sit amet odio. Donec semmi, ullamcorper sit amet risus vitae, fermentum viverra lorem. Maecenas convallis fringilla accumsan.
+									</div>
+									
+									<div class="reviewer">
+										- <span class="name">Ms. Chang</span>, <span class="date">21 May 2016</span>
+									</div>
+								</div>
+								<div class="item">
+									<div class="star-rating">
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+									
+									<div class="review-text">
+										Fusce sed ultrices leo, non tristique nibh. Mauris mollis sagittis odio, vel congue arcu rutrum ut. Etiam accumsan, dolor vitae euismod scelerisque, enim felis consectetur tortor, et scelerisque orci mi ac sapien. Maecenas tincidunt tellus ac quam lacinia, at sodales felis fringilla. Morbi quam erat, mollis in laoreet a, dignissim sit amet odio. Donec semmi, ullamcorper sit amet risus vitae, fermentum viverra lorem. Maecenas convallis fringilla accumsan.
+									</div>
+									
+									<div class="reviewer">
+										- <span class="name">Ms. Chang</span>, <span class="date">21 May 2016</span>
+									</div>
+								</div>
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#what-slider" data-slide="prev">
+								<span class="icon-prev"></span>
+							</a>
+							<a class="right carousel-control" href="#what-slider" data-slide="next">
+								<span class="icon-next"></span>
+							</a>
+
+						</div>
+					
+					</div>
+					
+				</div>
+				
+				<div class="row empty-space"></div>
+				
+					<div class="conversation">
+						
+						<img class="avt left" src="img/user/avt.png"><p class="triangle-border left">Hi, I will only be available next month.</p>
+						
+					</div>
+					
+					<div class="conversation-send">
+						
+						<div class="input-group">
+						  <textarea rows="2" cols="50"></textarea>
+						  <span class="input-group-btn">
+							<button class="btn btn-default" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+						  </span>
+						</div>
+						
+					</div>		
+					
+					<!-- User Request Summary -->					
+						<section id="user-request" class="dashboard">
+							
+								<div class="col-md-12">
+									<h3>Request summary</h3>
+									
+									<h4>Request ID <span class="rid">80323</span></h4>
+									
+									<h4>Request details</h4>
+									
+									<div class="b-line"></div>
+									
+									<div class="box">
+										<p>What is your gender?</p>
+										<p class="gender">Female</p>
+									</div>
+									
+									<div class="box">
+										<p>How old are you?</p>
+										<p class="age">50</p>
+									</div>
+									
+									<div class="box">
+										<p>When do you need it?</p>
+										<p class="date">01/04/2016</p>
+									</div>
+									
+									<div class="box">
+										<p>Where do you need it?</p>
+										<p class="location">Bukit Damansara</p>
+									</div>
+									
+									<div class="box">
+										<p>How old are you?</p>
+										<p class="age">50</p>
+									</div>
+									
+									<div class="box">
+										<p>When do you need it?</p>
+										<p class="date">01/04/2016</p>
+									</div>
+									
+									<div class="box">
+										<p>Where do you need it?</p>
+										<p class="location">Bukit Damansara</p>
+									</div>
+								</div>
+								
+								<div class="col-md-12 right bdr-top">
+									<div class="col-xs-1">
+										<i class="fa fa-info-circle" aria-hidden="true"></i>
+									</div>
+									
+									<div class="col-xs-11 colour-red">
+										<h4 class="colour-red">Important things to consider before hiring. Please read.</h4>
+										
+										<p>Out of respect to the service providers, please let them know if you have hired someone or if you no longer required their services.
+										</p>
+									</div>
+								</div>
+						</section>		
+					<!-- User Request Summary End -->	
+								
+			  </div>
+			  
+			  <div class="tab-pane" id="comp2">
+				
+				<div class="row">
+					<div class="comp-title"><h2>COMP 2</h2></div>
+					<div class="view-link"><a href="#">View Profile</a></div>
+				</div>
+				
+				<div class="row">
+					<div class="star-rating-single"><i class="fa fa-star" aria-hidden="true"></i></div>
+				</div>
+				
+				<div class="row">
+					<div class="details">
+					
+						<i class="fa fa-user" aria-hidden="true"></i> Azira
+							<br/>
+						<i class="fa fa-globe" aria-hidden="true"></i> <a class="comp-web" href="#">Visit my website</a>
+						
+					</div>
+					
+					<div class="single-comp-price">
+						<span class="price">RM12000</span><br/><span class="timing">lumpsum</span>
+					</div>
+						
+				</div>
+				
+				<div class="row">
+					<p class="desc">Hi there,<br/>Fusce sed ultrices leo, non tristique nibh. Mauris mollis sagittis odio, vel congue arcu rutrum ut. Etiam accumsan, dolor vitae euismod scelerisque, enim felis consectetur tortor, et scelerisque orci mi ac sapien. Maecenas tincidunt tellus ac quam lacinia, at sodales felis fringilla. Morbi quam erat, mollis in laoreet a, dignissim sit amet odio. Donec semmi, ullamcorper sit amet risus vitae, fermentum viverra lorem. Maecenas convallis fringilla accumsan.
+					</p>
+				</div>
+				
+				<div class="row">
+					<a href="" class="view-attachment">View Attachment</a>
+				</div>
+				
+				<div class="row review-tab">
+					<h4>Reviews</h4>
+					<div class="desktop">
+						<div class="col-xs-6">
+							<div class="star-rating">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							
+							<div class="review-text">
+								Fusce sed ultrices leo, non tristique nibh. Mauris mollis sagittis odio, vel congue arcu rutrum ut. Etiam accumsan, dolor vitae euismod scelerisque, enim felis consectetur tortor, et scelerisque orci mi ac sapien. Maecenas tincidunt tellus ac quam lacinia, at sodales felis fringilla. Morbi quam erat, mollis in laoreet a, dignissim sit amet odio. Donec semmi, ullamcorper sit amet risus vitae, fermentum viverra lorem. Maecenas convallis fringilla accumsan.
+							</div>
+							
+							<div class="reviewer">
+								- <span class="name">Ms. Chang</span>, <span class="date">21 May 2016</span>
+							</div>
+								
+						</div>
+						
+						<div class="col-xs-6">
+							<div class="star-rating">
+								<i class="fa fa-star" aria-hidden="true"></i>
+							</div>
+							
+							<div class="review-text">
+								Fusce sed ultrices leo, non tristique nibh. Mauris mollis sagittis odio, vel congue arcu rutrum ut. Etiam accumsan, dolor vitae euismod scelerisque, enim felis consectetur tortor, et scelerisque orci mi ac sapien. Maecenas tincidunt tellus ac quam lacinia, at sodales felis fringilla. Morbi quam erat, mollis in laoreet a, dignissim sit amet odio. Donec semmi, ullamcorper sit amet risus vitae, fermentum viverra lorem. Maecenas convallis fringilla accumsan.
+							</div>
+							
+							<div class="reviewer">
+								- <span class="name">Ms. Kum</span>, <span class="date">21 July 2016</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="mobile">
+					
+										<!-- Slider -->
+						<div id="what-slider" class="carousel slide mobile">
+
+							<!-- Wrapper for Slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="star-rating">
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+									
+									<div class="review-text">
+										Fusce sed ultrices leo, non tristique nibh. Mauris mollis sagittis odio, vel congue arcu rutrum ut. Etiam accumsan, dolor vitae euismod scelerisque, enim felis consectetur tortor, et scelerisque orci mi ac sapien. Maecenas tincidunt tellus ac quam lacinia, at sodales felis fringilla. Morbi quam erat, mollis in laoreet a, dignissim sit amet odio. Donec semmi, ullamcorper sit amet risus vitae, fermentum viverra lorem. Maecenas convallis fringilla accumsan.
+									</div>
+									
+									<div class="reviewer">
+										- <span class="name">Ms. Chang</span>, <span class="date">21 May 2016</span>
+									</div>
+								</div>
+								<div class="item">
+									<div class="star-rating">
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+									
+									<div class="review-text">
+										Fusce sed ultrices leo, non tristique nibh. Mauris mollis sagittis odio, vel congue arcu rutrum ut. Etiam accumsan, dolor vitae euismod scelerisque, enim felis consectetur tortor, et scelerisque orci mi ac sapien. Maecenas tincidunt tellus ac quam lacinia, at sodales felis fringilla. Morbi quam erat, mollis in laoreet a, dignissim sit amet odio. Donec semmi, ullamcorper sit amet risus vitae, fermentum viverra lorem. Maecenas convallis fringilla accumsan.
+									</div>
+									
+									<div class="reviewer">
+										- <span class="name">Ms. Chang</span>, <span class="date">21 May 2016</span>
+									</div>
+								</div>
+							</div>
+
+							<!-- Controls -->
+							<a class="left carousel-control" href="#what-slider" data-slide="prev">
+								<span class="icon-prev"></span>
+							</a>
+							<a class="right carousel-control" href="#what-slider" data-slide="next">
+								<span class="icon-next"></span>
+							</a>
+
+						</div>
+					
+					</div>
+					
+				</div>
+				
+				<div class="row empty-space"></div>
+				
+					<div class="conversation">
+						
+						<img class="avt left" src="img/user/avt.png"><p class="triangle-border left">Hi, I will only be available next month.</p>
+						
+					</div>
+					
+					<div class="conversation-send">
+						
+						<div class="input-group">
+						  <textarea rows="2" cols="50"></textarea>
+						  <span class="input-group-btn">
+							<button class="btn btn-default" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+						  </span>
+						</div>
+						
+					</div>
+					
+					<!-- User Request Summary -->					
+						<section id="user-request" class="dashboard">
+							
+								<div class="col-md-12">
+									<h3>Request summary</h3>
+									
+									<h4>Request ID <span class="rid">80323</span></h4>
+									
+									<h4>Request details</h4>
+									
+									<div class="b-line"></div>
+									
+									<div class="box">
+										<p>What is your gender?</p>
+										<p class="gender">Female</p>
+									</div>
+									
+									<div class="box">
+										<p>How old are you?</p>
+										<p class="age">50</p>
+									</div>
+									
+									<div class="box">
+										<p>When do you need it?</p>
+										<p class="date">01/04/2016</p>
+									</div>
+									
+									<div class="box">
+										<p>Where do you need it?</p>
+										<p class="location">Bukit Damansara</p>
+									</div>
+									
+									<div class="box">
+										<p>How old are you?</p>
+										<p class="age">50</p>
+									</div>
+									
+									<div class="box">
+										<p>When do you need it?</p>
+										<p class="date">01/04/2016</p>
+									</div>
+									
+									<div class="box">
+										<p>Where do you need it?</p>
+										<p class="location">Bukit Damansara</p>
+									</div>
+									
+									<div class="box">
+										<p>What is your gender?</p>
+										<p class="gender">Female</p>
+									</div>
+									
+									<div class="box">
+										<p>How old are you?</p>
+										<p class="age">50</p>
+									</div>
+									
+									<div class="box">
+										<p>When do you need it?</p>
+										<p class="date">01/04/2016</p>
+									</div>
+									
+									<div class="box">
+										<p>Where do you need it?</p>
+										<p class="location">Bukit Damansara</p>
+									</div>
+									
+									<div class="box">
+										<p>How old are you?</p>
+										<p class="age">50</p>
+									</div>
+									
+									<div class="box">
+										<p>When do you need it?</p>
+										<p class="date">01/04/2016</p>
+									</div>
+									
+									<div class="box">
+										<p>Where do you need it?</p>
+										<p class="location">Bukit Damansara</p>
+									</div>
+									
+									<div class="box">
+										<p>What is your gender?</p>
+										<p class="gender">Female</p>
+									</div>
+									
+									<div class="box">
+										<p>How old are you?</p>
+										<p class="age">50</p>
+									</div>
+									
+									<div class="box">
+										<p>When do you need it?</p>
+										<p class="date">01/04/2016</p>
+									</div>
+									
+									<div class="box">
+										<p>Where do you need it?</p>
+										<p class="location">Bukit Damansara</p>
+									</div>
+									
+									<div class="box">
+										<p>How old are you?</p>
+										<p class="age">50</p>
+									</div>
+									
+									<div class="box">
+										<p>When do you need it?</p>
+										<p class="date">01/04/2016</p>
+									</div>
+									
+									<div class="box">
+										<p>Where do you need it?</p>
+										<p class="location">Bukit Damansara</p>
+									</div>
+								</div>
+								
+								<div class="col-md-12 right bdr-top">
+									<div class="col-xs-1">
+										<i class="fa fa-info-circle" aria-hidden="true"></i>
+									</div>
+									
+									<div class="col-xs-11 colour-red">
+										<h4 class="colour-red">Important things to consider before hiring. Please read.</h4>
+										
+										<p>Out of respect to the service providers, please let them know if you have hired someone or if you no longer required their services.
+										</p>
+									</div>
+								</div>
+						</section>		
+					<!-- User Request Summary End -->		
+								
+			  </div>
+			</div>
+		</div>
+
+	</div>
+</section>
+</template>

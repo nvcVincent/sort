@@ -1,0 +1,336 @@
+<template name="RequestLayout">
+
+<body>
+  {{> navigation}}
+  {{> request}}
+  {{> footer}}
+</body>
+
+</template>
+
+
+<template name="request">	
+<section id="request" class="swrap">
+	<div class="title">
+		<div class="container">
+			<h1>LIONDANCE</h1>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+    <!-- Hiring -->
+    <section id="hiring">
+        <div class="container">
+            <div class="row">
+				
+				<div class="icon">
+					<div class="col-md-3 col-sm-3">
+						<img src="img/submit.png">
+						<div class="desc">Submit form</div>
+					</div>
+
+					<div class="col-md-1 col-sm-1">				
+						<img class="desktop" src="img/arrow-next.png">
+						<img class="mobile" src="img/arrow-down.png">
+					</div>
+						
+					<div class="col-md-4 col-sm-4">
+						<img src="img/compare.png">
+						<div class="desc">Compare quotations</div>
+					</div>			
+
+					<div class="col-md-1 col-sm-1">
+						<img class="desktop" src="img/arrow-next.png">
+						<img class="mobile" src="img/arrow-down.png">
+					</div>
+					
+					<div class="col-md-3 col-sm-3">
+						<img src="img/book.png">
+						<div class="desc">Book talent</div>
+					</div>
+				</div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>  
+
+	<div class="col-sm-6 yt">
+	
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" allowfullscreen src="https://www.youtube.com/embed/YivYcBRZHHQ"></iframe>
+		</div>	
+		
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" allowfullscreen src="https://www.youtube.com/embed/YivYcBRZHHQ"></iframe>
+		</div>	
+	
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" allowfullscreen src="https://www.youtube.com/embed/YivYcBRZHHQ"></iframe>
+		</div>	
+		
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" allowfullscreen src="https://www.youtube.com/embed/YivYcBRZHHQ"></iframe>
+		</div>	
+	</div>
+	
+
+	<div class="col-sm-6 the-form">
+		<div class="sec">
+			<p>1. Types of service required: </p>
+			
+			<div class="form-group">
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">24 Seasons Drum</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Dragon Dance</span>
+			  </label>
+			</div>
+		</div>
+		
+		<div class="sec">
+			<p>2. Festive Performer(s) experience: </p>
+			
+			<div class="form-group">
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Intermediate</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Professional</span>
+			  </label>
+			</div>
+		</div>
+		
+		<div class="sec">
+			<p>3. Function: </p>
+			
+			<div class="form-group">
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Private party / Birthday party</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Charity</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Public</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Corporate</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Networking</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Film / Video</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Wedding</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<input type="text" class="form-control" id="option-form" placeholder="Others">
+			  </label>
+			</div>
+		</div>
+		
+		<div class="sec">
+			<p>4. Venue: </p>
+			
+			<div class="form-group">
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Hotel Ballroom / Conference Hall</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Concert Hall</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Room / Studio</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Indoor Event Space</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Home</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Stadium</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Auditorium / Theatre</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Outdoor Event Space</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Restaurant</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Boardroom / Forum</span>
+			  </label>
+				
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<input type="text" class="form-control" id="option-form" placeholder="Others">
+			  </label>
+			</div>
+		</div>
+		
+		<div class="sec">
+			<p>5. Estimated number of attendees: </p>
+				<input type="number" class="form-control" id="number-attendee" placeholder="eg. 50">
+		</div>
+		
+		<div class="sec">
+			<p>6. Please describe the job in detail (optional): </p>
+				<textarea rows="4" cols="50" name="msg" form="msg" placeholder="This will help the service provider in providing a more accurate quote."></textarea>
+		</div>
+		
+		<div class="sec area">
+			<p>7. Where do you need it? </p>
+				<p class="small-title">Location</p>
+				<input type="text" class="form-control" id="location" placeholder="Eg: Kuala Lumpur Convention Center">				
+
+				<p class="small-title">Area</p>
+				<input type="text" class="form-control" id="area" placeholder="Eg: Damansara">		
+
+				<p class="small-title">State</p>
+				<select class="form-control">
+					<option value="" disabled selected>Select State</option>
+					<option value="#">Kuala Lumpur</option>
+					<option value="#">Johor</option>
+					<option value="#">Sarawak</option>
+				</select>
+		</div>
+		
+		<div class="sec date">
+			<p>8. When do you need it? </p>
+				<input type="text" id="datepick" placeholder="If you're unsure, give an estimate">
+					<br/><br/>
+				<input type="text" id="datepicker">
+
+				<span>~</span>
+
+				<input type="text" id="datepickerend">
+		</div>	
+
+	</div>
+	
+<div class="divider"></div>
+
+	<div class="col-xs-12"><p>Your contact details</p></div>
+
+	<div class="col-sm-6 btm">	
+			<p class="small-title">Name</p>
+			<input type="text" class="form-control" id="name" placeholder="">				
+
+			<p class="small-title">Email</p>
+			<input type="text" class="form-control" id="email" placeholder="">		
+			
+			<p class="small-title">Phone Number</p>
+			<input type="text" class="form-control" id="phone" placeholder="">				
+
+			<p class="small-title">Promo Code (Optional)</p>
+			<input type="text" class="form-control" id="promo" placeholder="">	
+	</div>
+	
+	<div class="col-sm-6 btm-right">
+	
+		<p>Prefered Contact Method</p>
+		
+		<div class="form-group">
+		  <label class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">Phone Call</span>
+		  </label>
+			
+		  <label class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">SMS</span>
+		  </label>
+			
+		  <label class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">Email</span>
+		  </label>
+			
+		  <label class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">Whatsapp</span>
+		  </label>
+		</div>
+	</div>
+	
+	<div class="col-md-12 submit-button">
+		<a href="#">Submit</a>
+	</div>
+	
+	</div>
+	
+</section>
+</template>

@@ -1,0 +1,347 @@
+<template name="EntertainerDashboard2Layout">
+
+<body>
+  {{> afterloginnavigation}}
+  {{> dashboard2}}
+  {{> footer}}
+</body>
+
+</template>
+
+
+<template name="dashboard2">	
+<section id="entertainer-dash" class="dashboard swrap">
+
+	<div class="title">
+		<div class="container">
+			<h1><span class="entertainer-name">SORTVILLE</span>'S DASHBOARD</h1>
+			<div class="single-star-rating"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<div class="content">
+		
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#job-requests" aria-controls="job-requests" role="tab" data-toggle="tab">Job requests</a></li>
+			<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages <span class="total">99</span></a></li>
+			<li class="code desktop"><a href="#">Sortville's Code of Conduct</a></li>
+			<li class="tips desktop"><a href="#"><span data-toggle="modal" data-target="#thetips">Tips to Get Hired</span></a></li>
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="job-requests">
+			<div class="container">
+	
+				<div class="col-md-6">
+					
+					<h4>Request ID <span class="rid">80323</span></h4>
+					<h4>From <span class="name">Jennifer</span></h4>
+					
+					<h4>Request details</h4>
+					
+					<div class="b-line"></div>
+					
+					<div class="box">
+						<p>What is your gender?</p>
+						<p class="gender">Female</p>
+					</div>
+					
+					<div class="box">
+						<p>How old are you?</p>
+						<p class="age">50</p>
+					</div>
+					
+					<div class="box">
+						<p>When do you need it?</p>
+						<p class="date">01/04/2016</p>
+					</div>
+					
+					<div class="box">
+						<p>Where do you need it?</p>
+						<p class="location">Bukit Damansara</p>
+					</div>
+				</div>
+				
+				<div class="col-md-2"></div>
+				
+				<div class="col-md-4 all-step">
+					<h4>Step 1</h4>
+					
+					<p class="extra">Your estimated quotation<br/>
+					Only numbers(0...9) ranges(12-50) are accepted</p>
+											
+						<div class="hp">
+							<input type="number" class="form-control" id="price">
+						</div>
+						
+						<div class="duration">
+							<div class="col-xs-4">
+								<input type="radio" name="duration" value="Hourly"> Hourly
+							</div>
+							<div class="col-xs-4">
+								<input type="radio" name="duration" value="Lumpsum"> Lumpsum
+							</div>
+							<div class="col-xs-4">
+								<input type="radio" name="duration" value="Per unit"> Per unit
+							</div>
+						</div>
+					
+					
+					<div class="spacing"></div>
+					<h4>Step 2</h4>
+					
+					<p class="extra">Introduce yourself and explain your quote<br/>
+					Make sure your profile is complete, as it is presented to the customers along with your quote</p>
+					
+					<button class="user-template">User Template 1</button>
+
+					<textarea rows="5" cols="100" type="name" class="form-control" id="introduce"></textarea>
+					<button class="user-template red">Save as template</button>
+					
+					<div class="spacing"></div>
+					<div class="col-md-12 pad">
+						<h4>Step 3</h4>		
+						
+						<p class="extra">Attach a file (eg: quote form, brochure, photo)</p>
+						
+					
+						<div class="upload-img">
+							<a href="#">Choose file to upload</a>
+						</div>
+					</div>	
+						
+				</div>
+			</div>
+			
+				<div class="col-md-12">
+					<button class="user-template">Submit Quote</button>	
+				</div>
+			</div>
+			
+			<div role="tabpanel" class="tab-pane" id="messages">
+				
+				
+					<div class="col-sm-3"> 
+					  <!-- Nav tabs -->
+					  <ul class="nav nav-tabs tabs-left">
+						<li class="active" id="alt"><a href="#msg1" data-toggle="tab"><span class="s-avatar"><img src="img/user/avatar1.png"> Jennifer</span></a></li>
+						<li><a href="#msg2" data-toggle="tab"><span class="s-avatar"><img src="img/user/avatar2.png"> Larry Page</span> </a></li>
+						<li id="alt"><a href="#msg3" data-toggle="tab"><span class="s-avatar"><img src="img/user/avatar3.png"> Steve</span></a></li>
+					  </ul>
+					</div>
+					<div class="col-sm-9 ctn">
+						<!-- Tab panes -->
+						<div class="tab-content">
+						  <div class="tab-pane active" id="msg1">
+							<div class="col-sm-12">
+								<div class="sender-name">
+									<span class="s-avatar"><img src="img/user/avatar1.png"> Jennifer</span>	
+										
+										<button class="orange-btn" href="#">View quote</button>
+										<button class="red-btn" href="#">Report</button>
+									
+								</div>
+							</div>
+							
+							<div class="ext spacing"></div>
+							
+							<!-- Bottom -->
+
+							<div class="conversation">
+								
+								<p class="triangle-border left">Hi, How ara you? I am looking for singer near Bukit Bintang<span class="date-time">15/03 08.11AM</span></p>
+							
+								<div class="conversation-spacing"></div>
+							
+								<p class="triangle-border right">Got it, let's discuss.<span class="date-time">15/03 08.11AM</span></p>
+								
+							</div>
+							
+							<div class="conversation-send">
+								
+								<div class="input-group">
+								  <input type="text" class="form-control">
+								  <span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+								  </span>
+								</div>
+								
+							</div>
+							
+							<!-- Bottom End -->
+					
+					
+						  </div>
+						  
+						  <div class="tab-pane" id="msg2">
+							<div class="col-sm-12">
+								<div class="sender-name">
+									<span class="s-avatar"><img src="img/user/avatar2.png"> Shila Amzah</span>	
+										
+										<button class="orange-btn" href="#">View quote</button>
+										<button class="red-btn" href="#">Report</button>
+									
+								</div>
+							</div>
+							
+							<div class="ext spacing"></div>
+							
+							<!-- Bottom -->
+
+							<div class="conversation">
+							
+								<p class="triangle-border right">Hey, when are you available? Hey, when are you available?
+								<span class="date-time">15/03 08.11AM</span></p>
+							
+								<div class="conversation-spacing"></div>
+								
+								<p class="triangle-border left">Hi, I will only be available next month.<span class="date-time">15/03 08.11AM</span></p>
+								
+							</div>
+							
+							<div class="conversation-send">
+								
+								<div class="input-group">
+								  <input type="text" class="form-control">
+								  <span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+								  </span>
+								</div>
+								
+							</div>
+							
+							<!-- Bottom End -->
+						  
+						  </div>
+						  
+						  <div class="tab-pane" id="msg3">
+							<div class="col-sm-12">
+								<div class="sender-name">
+									<span class="s-avatar"><img src="img/user/avatar3.png"> Stephen Colbert</span> 
+										
+										<button class="orange-btn" href="#">View quote</button>
+										<button class="red-btn" href="#">Report</button>
+									
+								</div>
+							</div>
+							
+							<div class="ext spacing"></div>
+							
+							<!-- Bottom -->
+
+							<div class="conversation">
+							
+								<p class="triangle-border right">Hey, when are you available?<span class="date-time">15/03 08.11AM</span></p>
+							
+								<div class="conversation-spacing"></div>
+								
+								<p class="triangle-border left">Hi, I will only be available next month.<span class="date-time">15/03 08.11AM</span></p>
+								
+							</div>
+							
+							<div class="conversation-send">
+								
+								<div class="input-group">
+								  <input type="text" class="form-control">
+								  <span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+								  </span>
+								</div>
+								
+							</div>
+							
+							<!-- Bottom End -->
+						  
+						  </div>
+						</div>
+					</div>
+					
+					<div class="btm-spacing"></div>
+				
+			</div>
+			
+
+		</div>
+
+	</div>
+
+<!-- Modal -->
+<div id="thetips" class="modal fade" role="dialog">
+	<div class="tips">
+	
+		<div class="container">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4>How to get hired</h4>
+			
+			<div class="col-sm-6">
+				<div class="box2">
+					<h3>Tip #1</h3>
+					
+					<p>Build a Winning Profile</p>
+					
+					<ul>
+						<li>Promote your experience and skills.</li>					
+						<li>Talk about your qualifications, certifications, licenses, etc.</li>						
+						<li>Include photographs of yourself and your work.</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="col-sm-6">
+				<div class="box2">
+					<h3>Tip #2</h3>
+					
+					<p>Provide a Great Service & Ask for Reviews</p>
+					
+					<ul>
+						<li>Respond quickly with your quotation</li>
+						<li>Always follow up with the customer</li>
+						<li>Ask for reviews from customers.</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="invisible-spacing"></div>
+			
+			<div class="col-sm-6">
+				<div class="box2">
+					<h3>Tip #3</h3>
+					
+					<p>Make a Personal Connection</p>
+					
+					<ul>
+						<li>Be clear & professional in your intro to the customer</li>
+						<li>Give a detailed, accurate and competitive quote</li>
+						<li>If you can't quote, give an estimate or price range</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="col-sm-6">
+				<div class="box2">
+					<h3>Tip #4</h3>
+					
+					<p>Follow Up</p>
+					
+					<ul>
+						<li>Follow up with the customer after sending a quote</li>
+						<li>Keep trying. Persistence is key</li>
+						<li>Ask us for help if needed. We're happy to assist</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="invisible-spacing pop-btm"></div>
+			
+		</div>
+		
+	</div>
+	</div>
+</div>		
+</section>
+</template>

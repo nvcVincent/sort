@@ -1,0 +1,491 @@
+<template name="UserDashboardLayout">
+
+<body>
+  {{> afterloginnavigation}}
+  {{> udashboard}}
+  {{> footer}}
+</body>
+
+</template>
+
+
+<template name="udashboard">	
+<section id="user-dash" class="dashboard swrap">
+
+	<div class="title">
+		<div class="container">
+			<h1><span class="user-name">SAMUEL</span>'S DASHBOARD</h1>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<div class="content">
+		
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#job-requests" aria-controls="job-requests" role="tab" data-toggle="tab">Job requests</a></li>
+			<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages <span class="total">99</span></a></li>
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="job-requests">
+			
+				<div class="col-sm-3 col-md-2 blk"> 
+				  <!-- Nav tabs -->
+				  <ul class="nav nav-tabs tabs-left">
+					<li class="active"><a href="#new" data-toggle="tab">New</a></li>
+					<li><a href="#waiting" data-toggle="tab">Waiting <span class="w-total sub">0</span></a></li>
+					<li><a href="#pending" data-toggle="tab">Pending <span class="p-total sub">0</span></a></li>
+					<li><a href="#completed" data-toggle="tab">Completed <span class="c-total sub">0</span></a></li>
+				  </ul>
+				</div>
+				<div class="col-sm-9 col-md-10">
+					<!-- Tab panes -->
+					<div class="tab-content">
+					  <div class="tab-pane active" id="new">
+						<div class="col-sm-12">
+							<div class="t-title">Submit new request</div>
+							<h3>Pick a service</h3>
+						</div>
+						
+						<div class="spacing"></div>
+						
+						<!-- Bottom -->
+					<div class="col-md-12">
+						<a href="#"><img src="img/find/singer.jpg"></a>
+						<a href="#"><img src="img/find/dancer.jpg"></a>
+						<a href="#"><img src="img/find/magician.jpg"></a>
+						<a href="#"><img src="img/find/liondance.jpg"></a>
+						<a href="#"><img src="img/find/dj.jpg"></a>
+						<a href="#"><img src="img/find/emcee.jpg"></a>
+						<a href="#"><img src="img/find/magician.jpg"></a>
+						<a href="#"><img src="img/find/liondance.jpg"></a>
+						<a href="#"><img src="img/find/dj.jpg"></a>
+						<a href="#"><img src="img/find/emcee.jpg"></a>
+					</div>	
+						
+						<!-- Bottom End -->
+				
+				
+					  </div>
+					  
+					  <div class="tab-pane" id="waiting">
+						<div class="col-sm-6">
+							<div class="t-title">Waiting for proposals</div>
+							<p>Description here</p>
+						</div>
+						
+						<div class="col-sm-6">
+							<div class="input-group">
+							  <input type="text" class="form-control" placeholder="ID, Email, Name, Phone, Location">
+							  <span class="input-group-btn">
+								<button class="btn btn-default" type="button">Search</button>
+							  </span>
+							</div>
+						</div>
+						
+						<div class="spacing"></div>
+						
+						<!-- Bottom -->
+						<!-- Desktop View -->
+						<div class="b-title desktop">						
+							<div class="col-xs-2">
+								DATE SUBMITED
+							</div>
+							
+							<div class="col-xs-2">
+								REQUESTOR
+							</div>
+							
+							<div class="col-xs-2">
+								REQUEST
+							</div>
+							
+							<div class="col-xs-2">
+								SERVICE TYPE
+							</div>
+							
+							<div class="col-xs-2">
+								DATE NEEDED
+							</div>
+							
+							<div class="col-xs-2">
+								ACTION
+							</div>
+						</div>
+						
+						<div class="b-info break-list">
+							<div class="m-b-title cg mobile">DATE SUBMITED</div>						
+							<div class="col-xs-2 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUESTOR</div>
+							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">Lorem Ipsum</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">REQUEST</div>
+							
+							<div class="col-xs-2 cg rg">
+								<span class="request">Ipsum</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">SERVICE TYPE</div>	
+							
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Lorem</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">DATE NEEDED</div>
+							
+							<div class="col-xs-2 cg rg">								
+								<span class="date-needed">27 Mar 2016</span>
+							</div>	
+							
+							<div class="m-b-title wt mobile">ACTION</div>	
+							
+							<div class="col-xs-2 wt rg">
+								<span class="action"><a href="#">View Details</a></span>
+							</div>					
+						</div>
+						
+						<!-- Bottom End -->
+							
+					  </div>
+					  
+					  <div class="tab-pane" id="pending">
+						<div class="col-sm-6">
+							<div class="t-title">Pending proposals</div>
+							<p>Description here</p>
+						</div>
+						
+						<div class="col-sm-6">
+							<div class="input-group">
+							  <input type="text" class="form-control" placeholder="ID, Email, Name, Phone, Location">
+							  <span class="input-group-btn">
+								<button class="btn btn-default" type="button">Search</button>
+							  </span>
+							</div>
+						</div>
+						
+						<div class="spacing"></div>
+						
+						<!-- Bottom -->
+						<!-- Desktop View -->
+						<div class="b-title desktop">						
+							<div class="col-xs-2">
+								DATE SUBMITED
+							</div>
+							
+							<div class="col-xs-2">
+								REQUESTOR
+							</div>
+							
+							<div class="col-xs-2">
+								REQUEST
+							</div>
+							
+							<div class="col-xs-2">
+								SERVICE TYPE
+							</div>
+							
+							<div class="col-xs-2">
+								DATE NEEDED
+							</div>
+							
+							<div class="col-xs-2">
+								ACTION
+							</div>
+						</div>
+						
+						<div class="b-info break-list">
+							<div class="m-b-title cg mobile">DATE SUBMITED</div>						
+							<div class="col-xs-2 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUESTOR</div>
+							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">Lorem Ipsum</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">REQUEST</div>
+							
+							<div class="col-xs-2 cg rg">
+								<span class="request">Ipsum</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">SERVICE TYPE</div>	
+							
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Lorem</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">DATE NEEDED</div>
+							
+							<div class="col-xs-2 cg rg">								
+								<span class="date-needed">27 Mar 2016</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile">ACTION</div>	
+							
+							<div class="col-xs-2 wt rg">
+								<span class="action"><a href="#">View Quote</a></span>
+							</div>					
+						</div>
+						
+						<!-- Bottom End -->
+					  
+					  </div>
+					  
+					  <div class="tab-pane" id="completed">
+						<div class="col-sm-6">
+							<div class="t-title">Completed</div>
+							<p>Description here</p>
+						</div>
+						
+						<div class="col-sm-6">
+							<div class="input-group">
+							  <input type="text" class="form-control" placeholder="ID, Email, Name, Phone, Location">
+							  <span class="input-group-btn">
+								<button class="btn btn-default" type="button">Search</button>
+							  </span>
+							</div>
+						</div>
+						
+						<div class="spacing"></div>
+						
+						<!-- Bottom -->
+						<!-- Desktop View -->
+						<div class="b-title desktop">						
+							<div class="col-xs-2">
+								DATE SUBMITED
+							</div>
+							
+							<div class="col-xs-2">
+								REQUESTOR
+							</div>
+							
+							<div class="col-xs-2">
+								REQUEST
+							</div>
+							
+							<div class="col-xs-2">
+								SERVICE TYPE
+							</div>
+							
+							<div class="col-xs-2">
+								DATE NEEDED
+							</div>
+							
+							<div class="col-xs-2">
+								ACTION
+							</div>
+						</div>
+						
+						<div class="b-info break-list">
+							<div class="m-b-title cg mobile">DATE SUBMITED</div>						
+							<div class="col-xs-2 cg rg">
+								<span class="date">27 Mar</span><br/>
+								<span class="time">10.00am</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">REQUESTOR</div>
+							
+							<div class="col-xs-2 wt rg">
+								<span class="requestor">Lorem Ipsum</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">REQUEST</div>
+							
+							<div class="col-xs-2 cg rg">
+								<span class="request">Ipsum</span>
+							</div>
+							
+							<div class="m-b-title wt mobile">SERVICE TYPE</div>	
+							
+							<div class="col-xs-2 wt rg">
+								<span class="service-type">Lorem</span>
+							</div>
+							
+							<div class="m-b-title cg mobile">DATE NEEDED</div>
+							
+							<div class="col-xs-2 cg rg">								
+								<span class="date-needed">27 Mar 2016</span>
+							</div>		
+							
+							<div class="m-b-title wt mobile">ACTION</div>	
+							
+							<div class="col-xs-2 wt rg">
+								<span class="action"><a href="#">View Quote</a></span>
+							</div>					
+						</div>
+						
+						<!-- Bottom End -->
+					  
+					  </div>
+					</div>
+				</div>
+			
+			</div>
+			
+			<div role="tabpanel" class="tab-pane" id="messages">
+				
+				
+					<div class="col-sm-4 col-md-3"> 
+					  <!-- Nav tabs -->
+					  <ul class="nav nav-tabs tabs-left">
+						<li class="active" id="alt"><a href="#msg1" data-toggle="tab"><span class="s-avatar"><img src="img/user/avatar1.png"></span> Angelina Jolie</a></li>
+						<li><a href="#msg2" data-toggle="tab"><span class="s-avatar"><img src="img/user/avatar2.png"></span> Shila Amzah</a></li>
+						<li id="alt"><a href="#msg3" data-toggle="tab"><span class="s-avatar"><img src="img/user/avatar3.png"></span> Stephen Colbert</a></li>
+					  </ul>
+					</div>
+					<div class="col-sm-8 col-md-9 ctn">
+						<!-- Tab panes -->
+						<div class="tab-content">
+						  <div class="tab-pane active" id="msg1">
+							<div class="col-sm-12">
+								<div class="sender-name">
+									<span class="user-avt"><img class="s-avatar" src="img/user/avatar1.png"> Angelina Jolie	</span>
+										
+										<span class="user-btn">
+											<button class="orange-btn" href="#">View quote</button>
+											<button class="red-btn" href="#">Report</button>
+										</span>
+									
+								</div>
+							</div>
+							
+							<div class="ext spacing"></div>
+							
+							<!-- Bottom -->
+
+							<div class="conversation">
+							
+								<p class="triangle-border right">Hey, when are you available?<span class="date-time">15/03 08.11AM</span></p>
+							
+								<div class="conversation-spacing"></div>
+								
+								<p class="triangle-border left">Hi, I will only be available next month.<span class="date-time">15/03 08.11AM</span></p>
+								
+							</div>
+							
+							<div class="conversation-send">
+								
+								<div class="input-group">
+								  <input type="text" class="form-control">
+								  <span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+								  </span>
+								</div>
+								
+							</div>
+							
+							<!-- Bottom End -->
+					
+					
+						  </div>
+						  
+						  <div class="tab-pane" id="msg2">
+							<div class="col-sm-12">
+								<div class="sender-name">
+									<span class="user-avt"><img class="s-avatar" src="img/user/avatar2.png"> Shila Amzah</span>
+										
+										<span class="user-btn">
+											<button class="orange-btn" href="#">View quote</button>
+											<button class="red-btn" href="#">Report</button>
+										</span>
+									
+								</div>
+							</div>
+							
+							<div class="ext spacing"></div>
+							
+							<!-- Bottom -->
+
+							<div class="conversation">
+							
+								<p class="triangle-border right">Hey, when are you available? Hey, when are you available?
+								<span class="date-time">15/03 08.11AM</span></p>
+							
+								<div class="conversation-spacing"></div>
+								
+								<p class="triangle-border left">Hi, I will only be available next month.<span class="date-time">15/03 08.11AM</span></p>
+								
+							</div>
+							
+							<div class="conversation-send">
+								
+								<div class="input-group">
+								  <input type="text" class="form-control">
+								  <span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+								  </span>
+								</div>
+								
+							</div>
+							
+							<!-- Bottom End -->
+						  
+						  </div>
+						  
+						  <div class="tab-pane" id="msg3">
+							<div class="col-sm-12">
+								<div class="sender-name">
+										<span class="user-avt"><img class="s-avatar" src="img/user/avatar1.png"> Stephen Colbert</span>
+										
+										<span class="user-btn">
+											<button class="orange-btn" href="#">View quote</button>
+											<button class="red-btn" href="#">Report</button>
+										</span>
+								</div>
+							</div>
+							
+							<div class="ext spacing"></div>
+							
+							<!-- Bottom -->
+
+							<div class="conversation">
+							
+								<p class="triangle-border right">Hey, when are you available?<span class="date-time">15/03 08.11AM</span></p>
+							
+								<div class="conversation-spacing"></div>
+								
+								<p class="triangle-border left">Hi, I will only be available next month.<span class="date-time">15/03 08.11AM</span></p>
+								
+							</div>
+							
+							<div class="conversation-send">
+								
+								<div class="input-group">
+								  <input type="text" class="form-control">
+								  <span class="input-group-btn">
+									<button class="btn btn-default" type="button"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+								  </span>
+								</div>
+								
+							</div>
+							
+							<!-- Bottom End -->
+						  
+						  </div>
+						</div>
+					</div>
+					
+					<div class="btm-spacing"></div>
+				
+			</div>
+		  </div>
+
+		</div>
+
+	</div>
+</section>
+</template>

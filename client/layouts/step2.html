@@ -1,0 +1,51 @@
+<template name="step2Layout">
+
+<body>
+  {{> navigation}}
+  {{> step2}}
+  {{> footer}}
+</body>
+
+</template>
+
+
+<template name="step2">	
+<section id="step2" class="swrap">
+	<div class="title">
+		<div class="container">
+			<h1>You will receive job requets on the services that you have selected.</h1>
+			<h3>Please only select the services that you provide so that you will receive the right job requets from clients.</h3>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<div class="step-title">Step 2: Tick the service(s) you provide <span class="star-required">*</span></div>
+
+		<form>
+			<div class="form-group" required>
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Lion Dance</span>
+			  </label>
+			  
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">24 Seasons Drum</span>
+			  </label>
+			  
+			  <label class="custom-control custom-checkbox">
+				<input type="checkbox" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">Dragon Dance</span>
+			  </label>
+			</div>
+			
+			<div class="is-required">* is required</div>
+			<button type="submit" class="cont-button">Continue</button>
+		</form>
+	</div>
+</section>
+</template>

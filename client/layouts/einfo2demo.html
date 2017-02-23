@@ -1,0 +1,371 @@
+<template name="EntertainerInfo2DemoLayout">
+
+<body>
+  {{> afterloginnavigation}}
+  {{> info2demo}}
+  {{> footer}}
+</body>
+
+</template>
+
+
+<template name="info2demo">	
+<section id="entertainer" class="dashboard swrap">
+
+	<div class="title">
+		<div class="container">
+			<h1><span class="user-name">SORTVILLE</span>'S DETAILS</h1>
+			<div class="single-star-rating"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+	
+		<div class="content">
+		
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+			<li role="presentation"><a href="#business" aria-controls="business" role="tab" data-toggle="tab">Business</a></li>
+			<li role="presentation"><a href="#account" aria-controls="account" role="tab" data-toggle="tab">Account</a></li>
+			<a class="view-profile" href="#">View profile page</a>
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="profile">
+			
+				<div class="col-xs-6 col-md-4 profile-container">
+					<div class="p">Profile details</div>
+					
+					<div class="avatar">
+						<img src="img/user/avatar.jpg">
+					</div>
+					
+					<div class="upload-img">
+						<a href="#">Upload profile picture</a>
+					</div>
+					
+				</div>
+				
+				<div class="col-xs-12 col-md-8">
+					<form>
+					  <div class="form-group">
+						<label for="about">About Me
+						<p class="small">Promote your business here. Your profile is automatically sent to customers when you submit a quote. Give customers a brief history of your business & tell them why they should hire you.</p></label>
+						<textarea rows="5" cols="100" type="name" class="form-control" id="about-me"></textarea>
+					  </div>
+					  <div class="form-group">
+						<label for="myservices">My Services
+						<p class="small">Explain what services you provide</p></label><textarea rows="5" cols="100" type="name" class="form-control" id="my-services"></textarea>
+							
+					  </div>
+					  <div class="form-group">
+						<label for="myachievements">My Achievements
+						<p class="small">Give real examples of successful projects, reviews from previous clients & other accomplishments</p></label><textarea rows="5" cols="100" type="name" class="form-control" id="myachievements"></textarea>
+							
+					  </div>			
+					  
+					</form>
+				</div>
+
+<div class="spacing"></div>
+
+				<div class="col-xs-6 col-md-4">
+					<p class="gallery-title">Gallery</p>
+					<p class="t-small">Upload photos to showcase your works.</p>
+					
+				</div>
+				
+				<div class="col-xs-12 col-md-8">
+					<div class="drop-box">
+						<img src="img/sampleimg.jpg">
+						<img src="img/sampleimg.jpg">
+						<img src="img/sampleimg.jpg">
+					</div>
+				</div>
+				
+<div class="spacing"></div>
+
+				<div class="col-xs-6 col-md-4">
+					<p class="gallery-title">Video</p>
+					<p class="t-small">Add Youtube video to showcase your work. Copy and paste the video URL from Youtube.</p>
+					
+				</div>
+				
+				<div class="col-xs-12 col-md-8">
+					<div class="video-box">
+						<div class="video">
+							<div class="col-xs-1">
+								<span class="num">1</span>
+							</div>
+							
+							<div class="col-xs-11">
+								<img src="img/sampleimg.jpg">
+							</div>
+						</div>
+						<div class="video">
+							<div class="col-xs-1">
+								<span class="num">2</span>
+							</div>
+							
+							<div class="col-xs-11">
+								<input type="text" class="form-control" id="video2">
+							</div>
+						</div>
+						<div class="video">
+							<div class="col-xs-1">
+								<span class="num">3</span>
+							</div>
+							
+							<div class="col-xs-11">
+								<input type="text" class="form-control" id="video3">
+							</div>
+						</div>
+						
+						
+					</div>
+					
+					<button type="submit" class="btn btn-default">Save changes</button>
+				</div>
+				
+
+				
+
+			</div>
+			
+			<div role="tabpanel" class="tab-pane" id="business">
+				
+				<div class="col-xs-6 col-md-4">
+					<div class="p">Business details</div>
+				</div>
+				
+				<form class="col-xs-12 col-md-8">					
+					  <div class="form-group">
+						<label for="text">Name<span class="red">*</span>
+						<p class="t-small">It is a lot more professional when your customers know your full name</p></label>
+						<input type="text" class="form-control" id="name" required>
+					  </div>		
+					  
+					  <div class="form-group">
+						<label for="text">Business name<span class="red">*</span>
+						<p class="t-small">Please let custoers know if you are a Sdn Bhd, partnership or sole proprietor</p></label>
+						<input type="text" class="form-control" id="business-name" required>
+					  </div>
+					  
+					  <div class="col-md-6 pass">				
+						  <div class="form-group">
+							<label for="text">Business type</label>
+							<input type="text" class="form-control" id="business-type">
+						  </div>
+					  </div>
+					  
+					  <div class="col-md-6 c-pass">				
+						  <div class="form-group">
+							<label for="text">Company Reg No. (SSM)</label>
+							<input type="text" class="form-control" id="ssm">
+						  </div>
+					  </div>
+					  
+					  <div class="form-group">
+						<label for="text">Address<span class="red">*</span></label>
+						<input type="text" class="form-control" id="business-add" required>
+					  </div>
+					  
+					  <div class="col-md-4 pass">				
+						  <div class="form-group">
+							<label for="text">Postcode<span class="red">*</span></label>
+							<input type="number" class="form-control" id="postcode" required>
+						  </div>
+					  </div>
+					  
+					  <div class="col-md-4 pdg">	
+						<label for="text">City</label>				  
+						<select class="form-control">
+							<option value="" disabled selected>Select City</option>
+							<option value="#">Kuala Lumpur</option>
+							<option value="#">Kuching</option>
+							<option value="#">Klang</option>
+						</select>
+					  </div>
+					  
+					  <div class="col-md-4 pdg c-pass">	
+						<label for="text">State</label>						  
+						<select class="form-control">
+							<option value="" disabled selected>Select State</option>
+							<option value="#">Kuala Lumpur</option>
+							<option value="#">Johor</option>
+							<option value="#">Sarawak</option>
+						</select>
+					  </div>
+					  
+					  <div class="col-md-12 hp">
+						<label for="phone" class="phone">Phone <span class="red">*</span></label>
+							<input type="number" class="form-control" id="phone" required>
+						
+						<p class="t-small">If possible, enter your mobile phone number. Job request, notifications and booking information can be sent through SMS. Don't miss out on them!</p>	
+					  </div>
+					  
+					  <div class="col-md-12 hp">
+						<label for="phone" class="phone">Secondary phone number <span class="red">*</span></label>
+							<input type="number" class="form-control" id="phone" required>
+						
+						<p class="t-small">If possible, enter your mobile phone number. Job request, notifications and booking information can be sent through SMS. Don't miss out on them!</p>	
+					  </div>
+					  
+					  <div class="form-group web">
+						<label for="text">Website</label>
+						<input type="text" class="form-control" id="business-web">
+					  </div>
+					  
+					  <div class="form-group web">
+						<label for="text">Facebook page</label>
+						<input type="text" class="form-control" id="business-fb">
+					  </div>
+					
+					  
+					  <div class="form-group web">
+						<label class="col-xs-12" for="text">What service do you provide?</label>
+						<div class="bdr">		
+							<div class="col-xs-6">
+								<input type="checkbox" name="service-provide" value="Sing"> Sing
+							</div>
+							<div class="col-xs-6">
+								<input type="checkbox" name="service-provide" value="Dance"> Dance
+							</div>
+						</div>
+						<div class="bdr">	
+							<div class="col-xs-6">
+								<input type="checkbox" name="service-provide" value="Magic"> Magic
+							</div>
+							<div class="col-xs-6">
+								<input type="checkbox" name="service-provide" value="Lion Dance"> Lion Dance
+							</div>
+						</div>
+						<div class="bdr">	
+							<div class="col-xs-6">
+								<input type="checkbox" name="service-provide" value="DJ"> DJ
+							</div>
+							<div class="col-xs-6">
+								<input type="checkbox" name="service-provide" value="Emcee"> Emcee
+							</div>
+						</div>
+					  </div>
+					
+					  
+					  <div class="form-group web">
+						<label class="col-xs-12" for="text">Where do you provide your service?</label>
+						<div class="bdr">		
+							<div class="col-xs-6">
+								<input type="checkbox" name="service-where" value="Ampang"> Ampang
+							</div>
+							<div class="col-xs-6">
+								<input type="checkbox" name="service-where" value="Bandar Baru Sri Petaling"> Bandar Baru Sri Petaling
+							</div>
+						</div>
+						<div class="bdr">	
+							<div class="col-xs-6">
+								<input type="checkbox" name="service-where" value="Bandar Sri Damansara"> Bandar Sri Damansara
+							</div>
+							<div class="col-xs-6">
+								<input type="checkbox" name="service-where" value="Bangsar"> Bangsar
+							</div>
+						</div>
+						<div class="bdr">	
+							<div class="col-xs-6">
+								<input type="checkbox" name="service-where" value="Bukit Damansara"> Bukit Damansara
+							</div>
+							<div class="col-xs-6">
+								<input type="checkbox" name="service-where" value="Cheras"> Cheras
+							</div>
+						</div>
+					  </div>	
+					<span class="spacing red">* is required</span>					
+					<button type="submit" class="btn btn-default">Save changes</button>
+				</form>
+				
+			</div>
+			
+			<div role="tabpanel" class="tab-pane" id="account">
+				<form>
+				<div class="col-xs-6 col-md-4">
+					<div class="p">Account details</div>
+				</div>
+				
+				<div class="col-xs-12 col-md-8">					
+					  <div class="form-group">
+						<label for="text">Email address: <span class="red">*</span></label>
+						<input type="email" class="form-control" id="email" required>
+					  </div>
+					  
+					  <div class="col-md-6 pass">				
+						  <div class="form-group">
+							<label for="text">Password: <span class="red">*</span></label>
+							<input type="password" class="form-control" id="password" required>
+						  </div>
+					  </div>
+					  
+					  <div class="col-md-6 c-pass">				
+						  <div class="form-group">
+							<label for="text">Confirm password: <span class="red">*</span></label>
+							<input type="password" class="form-control" id="confirm-password">
+						  </div>
+					  </div>
+					  
+				</div>
+				
+				<div class="spacing"></div>
+				
+				<div class="col-xs-6 col-md-4">
+					<div class="p">Notification settings</div>
+				</div>
+				
+				<div class="col-xs-12 col-md-8 s-l">
+					<div class="col-xs-3">
+					
+					</div>
+					
+					<div class="col-xs-3 ctr">
+						New messages
+					</div>
+					
+					<div class="col-xs-3 ctr">
+						New requests
+					</div>
+					
+					<div class="col-xs-3 ctr">
+						New bookings
+					</div>
+					
+					<div class="d-btm">
+						<div class="col-xs-3">
+							Email
+						</div>
+						
+						<div class="col-xs-3 ctr">
+							<input type="checkbox" name="new-msg" value="New Messages">
+						</div>
+						
+						<div class="col-xs-3 ctr">
+							<input type="checkbox" name="new-request" value="New Requests">
+						</div>
+						
+						<div class="col-xs-3 ctr">
+							<input type="checkbox" name="new-bookings" value="New Bookings">
+						</div>
+					</div>
+					
+					<span class="spacing red">* is required</span>					
+					<button type="submit" class="btn btn-default">Save changes</button>
+				</div>
+				</form>
+				
+			</div>
+		  </div>
+
+		</div>
+
+	</div>
+</section>
+</template>

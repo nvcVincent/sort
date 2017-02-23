@@ -1,0 +1,751 @@
+<template name="HomeLayout">
+
+<body>
+  {{> navigation}}
+  {{> scroll}}
+  {{> carousel}}
+  {{> quote}}
+  {{> hiring}}
+  {{> findsuperstar}}
+  {{> what}}
+  {{> featured}}
+  {{> findmore}}
+  {{> latest}}
+  {{> cool}}
+  {{> partners}}
+  {{> footer}}
+</body>
+
+</template>
+
+<template name="scroll">	
+    <!-- Shown when scroll down -->
+	<nav class="special-nav navbar navbar-default navbar-fixed-top " role="navigation" style="display: block;">
+	  <div class="container container-fluid display-fluid">
+	  
+		<div class="row">
+			<div class="col-lg-2 col-lg-offset-1 col-md-3 col-sm-2">
+				<div id="top-header"><a class="logo" href="home.html">logo</a></div>
+			</div>
+			
+			<div class="col-lg-8 text-right col-md-9 col-sm-10">
+			  <form role="form" action="" accept-charset="UTF-8" method="post">
+			  <div class="row">
+				<div class="form-group col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
+					<input type="text" class="form-control" id="what-sort" placeholder="What you looking for?">
+				</div>
+				<div class="form-group col-md-4 col-sm-3">				  
+					<input type="text" class="form-control" id="where-do" placeholder="Where do you need it?">
+				</div>
+				<div class="form-group col-md-3 col-sm-3">
+				  <input type="submit" name="commit" value="Get free quotes" class="btn btn-blue btn-block js-search-btn" id="hero-submit-quote">
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="form-group col-sm-8">
+				  <span class="small error"></span>
+				</div>
+			  </div>
+			  </form>
+			</div>
+		</div>
+	  
+	  </div><!-- /.container-fluid -->
+	</nav>	
+</template>
+
+<template name="carousel">
+    <!-- Full Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill slide1">
+				</div>
+                <div class="carousel-caption">HIRE ENTERTAINERS FOR ANY EVENT<br/><span>Easier & Faster</span>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill slide2">
+				</div>
+                <div class="carousel-caption">HIRE ENTERTAINERS FOR ANY EVENT<br/><span>Easier & Faster</span>
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill slide3">
+				</div>
+                <div class="carousel-caption">HIRE ENTERTAINERS FOR ANY EVENT<br/><span>Easier & Faster</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+</template>
+
+<template name="quote">
+    <!-- Get Quote -->
+    <section id="quote">
+        <div class="container">
+            <div class="row">
+				<div class="col-md-12"><h3>Type In...</h3></div>
+				
+				<div class="col-md-8 col-sm-8">
+					<form>
+						<div class="form-group">
+						  <input type="text" class="form-control" id="what-sorts" placeholder="What sort of performance are you looking for?">
+						</div>
+						<div class="form-group">
+						  <input type="text" class="form-control" id="where-do" placeholder="Where do you need it?">
+						</div>
+					</form>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<a href="">Get free quotes now!</a>
+				</div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>   
+</template>
+
+<template name="hiring">
+    <!-- Hiring -->
+    <section id="hiring">
+        <div class="container">
+            <div class="row">
+				<div class="col-md-12"><h3>Hiring entertainers in 3 steps</h3></div>
+				
+				<div class="icon">
+					<div class="col-md-3 col-sm-3">
+						<img src="img/browse.png">
+						<div class="desc">Browse for performer</div>
+					</div>
+
+					<div class="col-md-1 col-sm-1">				
+						<img class="desktop" src="img/arrow-next.png">
+						<img class="mobile" src="img/arrow-down.png">
+					</div>
+						
+					<div class="col-md-4 col-sm-4">
+						<img src="img/send.png">
+						<div class="desc">Send request</div>
+					</div>			
+
+					<div class="col-md-1 col-sm-1">
+						<img class="desktop" src="img/arrow-next.png">
+						<img class="mobile" src="img/arrow-down.png">
+					</div>
+					
+					<div class="col-md-3 col-sm-3">
+						<img src="img/get.png">
+						<div class="desc">Get FREE quotation</div>
+					</div>
+				</div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>   
+</template>
+
+<template name="findsuperstar">
+    <!-- Find Your Superstar -->
+    <section id="find">
+        <div class="container">
+            <div class="row">
+				<div class="col-md-12"><h3>Find your superstar</h3></div>
+	
+				<div class="division">
+				
+					<a href="#"><img src="img/find/singer.jpg"></a>
+					
+					<a href="#"><img src="img/find/dancer.jpg"></a>
+					
+					<a href="#"><img src="img/find/magician.jpg"></a>
+					
+					<a href="#"><img src="img/find/liondance.jpg"></a>
+					
+					<a href="#"><img src="img/find/dj.jpg"></a>
+					
+					<a href="#"><img src="img/find/emcee.jpg"></a>
+				
+					<a href="#"><img src="img/find/singer.jpg"></a>
+					
+					<a href="#"><img src="img/find/dancer.jpg"></a>
+					
+					<a href="#"><img src="img/find/magician.jpg"></a>
+					
+					<a href="#"><img src="img/find/emcee.jpg"></a>
+						
+				</div>
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>   
+</template>
+
+<template name="what">
+    <!-- What People Have to say -->
+    <section id="what">
+        <div class="container">
+            <div class="row">
+				<div class="col-md-12"><h3>What people have to say</h3></div>
+	
+				<div class="desktop">
+					<div class="col-md-4 col-sm-6">
+					<div class="box">
+						<img src="img/what/s1.jpg">
+						<div class="name">Michelle</div>
+						<div class="description">
+							"Talitha was amazing and has an incredible voice. She is friendly and easy to deal with and has obliged to a song request by the family. :)."
+						</div>
+						<button>Request for singer</button>		
+					</div>
+					</div>
+						
+					<div class="col-md-4 col-sm-6">
+					<div class="box">
+						<img src="img/what/s2.jpg">
+						<div class="name">Mohd Ismail</div>
+						<div class="description">
+							"Tasha was phenomenal and is incredibly talented"
+						</div>
+						<button>Request for DJ</button>	
+					</div>		
+					</div>		
+					
+					<div class="col-md-4 col-sm-6">
+					<div class="box">
+						<img src="img/what/s3.jpg">
+						<div class="name">Vinod</div>
+						<div class="description">
+							"I was suprised by how well the work went. Manisa Cleaning Services were professional and trustworthy. Had a really good experience"
+						</div>
+						<button>Request for liondance</button>	
+					</div>	
+					</div>	
+				</div>
+				
+				<div class="desktop">
+					<div class="col-md-4 col-sm-6">
+					<div class="box">
+						<img src="img/what/s4.jpg">
+						<div class="name">Esther</div>
+						<div class="description">
+							"Chandran completed the job for lower than his estimated price. He was prompt, communicated well and always answered my calls."
+						</div>
+						<button>Request for dancer</button>	
+					</div>
+					</div>
+						
+					<div class="col-md-4 col-sm-6">
+					<div class="box">
+						<img src="img/what/s5.jpg">
+						<div class="name">Christian</div>
+						<div class="description">
+							"Tony from Chimporchamp Design was sharp and energetic. He was highly knowledgeable and provided suggestions that were useful & practical."
+						</div>
+						<button>Request for magician</button>	
+					</div>		
+					</div>		
+					
+					<div class="col-md-4 col-sm-6">
+					<div class="box">
+						<img src="img/what/s6.jpg">
+						<div class="name">Rosa</div>
+						<div class="description">
+							"Jon was excellent thumbs up to him and it was very easy to deal with him."
+						</div>
+						<button>Request for emcee</button>	
+					</div>	
+					</div>	
+				</div>
+				
+				
+
+				<!-- Slider -->
+				<div id="what-slider" class="carousel slide mobile">
+
+					<!-- Wrapper for Slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+								<div class="box">
+									<img src="img/what/s1.jpg">
+									<div class="name">Michelle</div>
+									<div class="description">
+										"Talitha was amazing and has an incredible voice. She is friendly and easy to deal with and has obliged to a song request by the family. :)."
+									</div>
+									<button>Request for singer</button>		
+								</div>
+						</div>
+						<div class="item">
+								<div class="box">
+									<img src="img/what/s2.jpg">
+									<div class="name">Mohd Ismail</div>
+									<div class="description">
+										"Tasha was phenomenal and is incredibly talented"
+									</div>
+									<button>Request for DJ</button>	
+								</div>	
+						</div>
+						<div class="item">
+								<div class="box">
+									<img src="img/what/s3.jpg">
+									<div class="name">Vinod</div>
+									<div class="description">
+										"I was suprised by how well the work went. Manisa Cleaning Services were professional and trustworthy. Had a really good experience"
+									</div>
+									<button>Request for liondance</button>	
+								</div>
+						</div>
+						<div class="item">
+								<div class="box">
+									<img src="img/what/s4.jpg">
+									<div class="name">Esther</div>
+									<div class="description">
+										"Chandran completed the job for lower than his estimated price. He was prompt, communicated well and always answered my calls."
+									</div>
+									<button>Request for dancer</button>	
+								</div>
+						</div>
+						<div class="item">
+								<div class="box">
+									<img src="img/what/s5.jpg">
+									<div class="name">Christian</div>
+									<div class="description">
+										"Tony from Chimporchamp Design was sharp and energetic. He was highly knowledgeable and provided suggestions that were useful & practical."
+									</div>
+									<button>Request for magician</button>	
+								</div>
+						</div>
+						<div class="item">
+								<div class="box">
+									<img src="img/what/s6.jpg">
+									<div class="name">Rosa</div>
+									<div class="description">
+										"Jon was excellent thumbs up to him and it was very easy to deal with him."
+									</div>
+									<button>Request for emcee</button>	
+								</div>	
+						</div>
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#what-slider" data-slide="prev">
+						<span class="icon-prev"></span>
+					</a>
+					<a class="right carousel-control" href="#what-slider" data-slide="next">
+						<span class="icon-next"></span>
+					</a>
+
+				</div>
+
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>  
+</template>
+
+<template name="featured">
+    <!-- As Featured In -->
+    <section id="featured">
+        <div class="container">
+            <div class="row">
+				<div class="col-md-12"><h3>As featured in</h3></div>
+	
+				<div class="division">
+					<div class="col-md-4 col-sm-4">
+						<img src="img/featured/airbnb.jpg">
+					</div>
+						
+					<div class="col-md-4 col-sm-4">
+						<img src="img/featured/universal.jpg">
+					</div>		
+					
+					<div class="col-md-4 col-sm-4">
+						<img src="img/featured/urban.jpg">
+					</div>	
+				</div>
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>  
+</template>
+
+<template name="findmore">
+    <!-- Find More -->
+    <section id="find-more">
+        <div class="container">
+            <div class="row">
+	
+				<div class="division">
+					<div class="col-md-6 col-sm-6 red">
+						<div class="l1">
+							Are you an artist,<br/>performer, entertainer?
+						</div>
+						
+						<div class="l2">
+							We've set the stage for you.<br/>Join SortVille and<br/>be discovered!
+						</div>
+						
+						<button class="l3">
+							Find out more!
+						</button>
+					</div>
+						
+					<div class="col-md-6 col-sm-6 white">
+						<div class="r1">
+							Know someone who are<br/>talented? Refer them here<br/>and be rewarded!
+						</div>
+						
+						<div class="r2">
+							Be it a user or a performer,<br/>you'll get rewarded if you<br/>refer them to SortVille!
+						</div>
+						
+						<button class="r3">
+							Find out more!
+						</button>
+					</div>		
+					
+					<div class="or">
+						<img src="img/or.png">
+					</div>	
+				</div>
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>  	
+</template>
+
+<template name="latest">
+    <!-- Latest News -->
+    <section id="latest">
+        <div class="container">
+            <div class="row">
+
+				<div class="col-md-12"><h3>Our latest news</h3></div>				
+				
+				<div class="division desktop">
+					<div class="col-md-3 col-sm-3">
+						<div class="box">
+							<img src="img/latest/l1.jpg">
+							<div class="desc">
+								Sortville transforms Taylor's singing career in 2 months
+							</div>
+							
+							<a href="#">Read more <img src="img/arrow.png"></a>
+								
+						</div>					
+					</div>
+					
+					<div class="col-md-3 col-sm-3">
+						<div class="box">
+							<img src="img/latest/l2.jpg">
+							<div class="desc">
+								This DJ is steering Netherlands to great heights
+							</div>
+							
+							<a href="#">Read more <img src="img/arrow.png"></a>
+						
+						</div>					
+					</div>	
+					
+					<div class="col-md-3 col-sm-3">
+						<div class="box">
+							<img src="img/latest/l3.jpg">
+							<div class="desc">
+								Amber stand out with her personality and positive energy
+							</div>
+							
+							<a href="#">Read more <img src="img/arrow.png"></a>
+						
+						</div>					
+					</div>
+					
+					<div class="col-md-3 col-sm-3">
+						<div class="box">
+							<img src="img/latest/l4.jpg">
+							<div class="desc">
+								A magical future is in store for Lu Chen
+							</div>
+							
+							<a href="#">Read more <img src="img/arrow.png"></a>
+						
+						</div>					
+					</div>
+				</div>
+
+				
+				<!-- Slider -->
+				<div id="latest-slider" class="carousel slide mobile">
+
+					<!-- Wrapper for Slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+					
+							<div class="col-xs-6">
+								<div class="box">
+									<img src="img/latest/l2.jpg">
+									<div class="desc">
+										This DJ is steering Netherlands to great heights
+									</div>
+									
+									<a href="#">Read more <img src="img/arrow.png"></a>								
+								</div>					
+							</div>
+							
+							<div class="col-xs-6">
+								<div class="box">
+									<img src="img/latest/l1.jpg">
+									<div class="desc">
+										Sortville transforms Taylor's singing career in 2 months
+									</div>
+									
+									<a href="#">Read more <img src="img/arrow.png"></a>
+								
+								</div>					
+							</div>
+							
+						</div>
+						<div class="item">
+					
+								<div class="col-xs-6">
+									<div class="box">
+										<img src="img/latest/l3.jpg">
+										<div class="desc">
+											Amber stand out with her personality and positive energy
+										</div>
+										
+										<a href="#">Read more <img src="img/arrow.png"></a>
+									
+									</div>					
+								</div>
+								
+								<div class="col-xs-6">
+									<div class="box">
+										<img src="img/latest/l4.jpg">
+										<div class="desc">
+											A magical future is in store for Lu Chen
+										</div>
+										
+										<a href="#">Read more <img src="img/arrow.png"></a>
+									
+									</div>					
+								</div>
+								
+						</div>
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#latest-slider" data-slide="prev">
+						<span class="icon-prev"></span>
+					</a>
+					<a class="right carousel-control" href="#latest-slider" data-slide="next">
+						<span class="icon-next"></span>
+					</a>
+
+				</div>
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>   
+</template>
+
+<template name="cool">
+    <!-- Cool Stuff -->
+    <section id="cool">
+        <div class="container">
+            <div class="row">
+
+				<div class="col-md-12">
+					<h3>Knowledge Center</h3>
+				</div>		
+
+				<div class="division desktop">
+					<div class="col-md-3 col-sm-3">
+						<div class="box">
+							<img src="img/cool/c1.jpg">
+							<div class="desc">
+								Sortville transforms Taylor's singing career in 2 months
+							</div>
+							
+							<a href="#">Read more <img src="img/arrow.png"></a>
+								
+						</div>					
+					</div>
+					
+					<div class="col-md-3 col-sm-3">
+						<div class="box">
+							<img src="img/cool/c2.jpg">
+							<div class="desc">
+								This DJ is steering Netherlands to great heights
+							</div>
+							
+							<a href="#">Read more <img src="img/arrow.png"></a>
+						
+						</div>					
+					</div>	
+					
+					<div class="col-md-3 col-sm-3">
+						<div class="box">
+							<img src="img/cool/c3.jpg">
+							<div class="desc">
+								Amber stand out with her personality and positive energy
+							</div>
+							
+							<a href="#">Read more <img src="img/arrow.png"></a>
+						
+						</div>					
+					</div>
+					
+					<div class="col-md-3 col-sm-3">
+						<div class="box">
+							<img src="img/cool/c4.jpg">
+							<div class="desc">
+								A magical future is in store for Lu Chen
+							</div>
+							
+							<a href="#">Read more <img src="img/arrow.png"></a>
+						
+						</div>					
+					</div>
+				</div>	
+
+
+				<!-- Slider -->
+				<div id="knowledge-slider" class="carousel slide mobile">
+
+					<!-- Wrapper for Slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+					
+							<div class="col-xs-6">
+								<div class="box">
+									<img src="img/cool/c1.jpg">
+									<div class="desc">
+										This DJ is steering Netherlands to great heights
+									</div>
+									
+									<a href="#">Read more <img src="img/arrow.png"></a>								
+								</div>					
+							</div>
+							
+							<div class="col-xs-6">
+								<div class="box">
+									<img src="img/cool/c2.jpg">
+									<div class="desc">
+										Sortville transforms Taylor's singing career in 2 months
+									</div>
+									
+									<a href="#">Read more <img src="img/arrow.png"></a>
+								
+								</div>					
+							</div>
+							
+						</div>
+						<div class="item">
+					
+								<div class="col-xs-6">
+									<div class="box">
+										<img src="img/cool/c3.jpg">
+										<div class="desc">
+											Amber stand out with her personality and positive energy
+										</div>
+										
+										<a href="#">Read more <img src="img/arrow.png"></a>
+									
+									</div>					
+								</div>
+								
+								<div class="col-xs-6">
+									<div class="box">
+										<img src="img/cool/c4.jpg">
+										<div class="desc">
+											A magical future is in store for Lu Chen
+										</div>
+										
+										<a href="#">Read more <img src="img/arrow.png"></a>
+									
+									</div>					
+								</div>
+								
+						</div>
+					</div>
+
+					<!-- Controls -->
+					<a class="left carousel-control" href="#knowledge-slider" data-slide="prev">
+						<span class="icon-prev"></span>
+					</a>
+					<a class="right carousel-control" href="#knowledge-slider" data-slide="next">
+						<span class="icon-next"></span>
+					</a>
+
+				</div>				
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>  
+</template>
+
+<template name="partners">
+    <!-- Our partners -->
+    <section id="partners">
+        <div class="container">
+            <div class="row">
+
+				<div class="col-md-12"><h3>Our partners</h3></div>		
+					
+				<div class="col-md-12 col-sm-8">
+					<img src="img/uber.jpg">		
+					<img src="img/bald-bear.jpg">
+					<img src="img/uber.jpg">		
+					<img src="img/bald-bear.jpg">	
+					<img src="img/bald-bear.jpg">	
+					<img src="img/bald-bear.jpg">	
+					<img src="img/bald-bear.jpg">	
+					<img src="img/bald-bear.jpg">	
+					<img src="img/bald-bear.jpg">	
+					<img src="img/bald-bear.jpg">	
+					<img src="img/bald-bear.jpg">	
+					<img src="img/bald-bear.jpg">	
+					<img src="img/bald-bear.jpg">	
+					<img src="img/bald-bear.jpg">
+				</div>
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>  	
+</template>
