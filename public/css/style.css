@@ -1955,7 +1955,7 @@ a.reset-button:hover {
     width: 45%;
     height: 25px;
     position: absolute;
-    margin-top: -3vh;
+    margin-top: -2.5vh;
     margin-left: 20px;
 }
 
@@ -4378,6 +4378,11 @@ h1 {
     width: 100%;
     float: left;
 }
+
+	#entertainer-dash .s-avatar {
+    width: 100%;
+    float: left;
+	}
 }
 
 

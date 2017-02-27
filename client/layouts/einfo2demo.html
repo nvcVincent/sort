@@ -72,7 +72,7 @@
 
 <div class="spacing"></div>
 
-				<div class="col-xs-6 col-md-4">
+				<div class="col-xs-6 col-md-4 upload-m">
 					<p class="gallery-title">Gallery</p>
 					<p class="t-small">Upload photos to showcase your works.</p>
 					
@@ -80,15 +80,24 @@
 				
 				<div class="col-xs-12 col-md-8">
 					<div class="drop-box">
-						<img src="img/sampleimg.jpg">
-						<img src="img/sampleimg.jpg">
-						<img src="img/sampleimg.jpg">
+						<div class="consider">
+							<img src="img/sampleimg.jpg">
+							<span data-toggle="modal" data-target="#delete-info" class="x-remove">x</span>
+						</div>
+						<div class="consider">
+							<img src="img/sampleimg.jpg">
+							<span data-toggle="modal" data-target="#delete-info" class="x-remove">x</span>
+						</div>
+						<div class="consider">
+							<img src="img/sampleimg.jpg">
+							<span data-toggle="modal" data-target="#delete-info" class="x-remove">x</span>
+						</div>
 					</div>
 				</div>
 				
 <div class="spacing"></div>
 
-				<div class="col-xs-6 col-md-4">
+				<div class="col-xs-6 col-md-4 upload-m">
 					<p class="gallery-title">Video</p>
 					<p class="t-small">Add Youtube video to showcase your work. Copy and paste the video URL from Youtube.</p>
 					
@@ -101,8 +110,9 @@
 								<span class="num">1</span>
 							</div>
 							
-							<div class="col-xs-11">
-								<img src="img/sampleimg.jpg">
+							<div class="col-xs-11 embed">
+								<iframe width="320" height="200" src="https://www.youtube.com/embed/YivYcBRZHHQ" frameborder="0" allowfullscreen></iframe>
+							<span data-toggle="modal" data-target="#delete-info" class="x-remove">x</span>
 							</div>
 						</div>
 						<div class="video">
@@ -365,7 +375,21 @@
 		  </div>
 
 		</div>
-
+		
+		<!-- Delete Popup Notification -->
+		<div id="delete-info" class="modal fade" role="dialog">
+			<div class="delete-info modal-dialog">
+			
+				<div class="container">
+					<p>Are you sure to delete it?</p>
+					<div class="decision">
+						<button type="button" class="accept">Yes</button>
+						<button type="button" class="not-accept" data-dismiss="modal" >Cancel</button>
+					</div>
+				</div>
+				
+			</div>
+		</div>	
 	</div>
 </section>
 </template>
