@@ -1051,6 +1051,10 @@ footer i.fa.fa-google-plus:hover {
     font-size: 15px;
 }
 
+.cat-link li a:hover {
+	color: #ed1a3b;
+}
+
 #blog .social a {
     color: #ccc;
     padding: 0px 10px;
@@ -1146,7 +1150,8 @@ footer i.fa.fa-google-plus:hover {
 }
 
 #blog .cat a:hover {
-    text-decoration: underline;
+	background: #ed1a3b;
+	color: #fff;
 }
 
 #blog .bbelow h3 {
@@ -2429,6 +2434,11 @@ input#area-code {
     margin: 15px 0;
 }
 
+.col-md-12.pass {
+    padding-left: 0;
+	padding-right: 0;
+}
+
 .col-md-6.pass {
     padding-left: 0;
 }
@@ -2597,19 +2607,20 @@ section#user-request {
     border: 0 !important;
 }
 
-#job-requests  .nav-tabs .active a {
+#job-requests .nav-tabs .active a {
     background: #453f40 !important;
     color: #fff !important;
     outline: solid 2px #ed1a3b;
     outline-offset: -2px;
 }
 
-#job-requests  .nav-tabs a {
-    background: #453f40 !important;
+#job-requests .nav-tabs>li>a {
+    margin-right: 0px;
 }
 
-#job-requests  .nav-tabs a:hover {
+#job-requests .nav-tabs a:hover {
     background: #eee !important;
+    color: #000 !important;
 }
 
 .tabs-left {
@@ -2707,6 +2718,10 @@ span.s-avatar {
 
 #entertainer-dash .tab-content {
     border-top: 1px solid #000;
+}
+
+#entertainer-dash #job-requests .tab-content {
+    border-top: none;
 }
 
 #entertainer-dash .nav-tabs .active a:hover {
@@ -2899,6 +2914,8 @@ button.red-btn:hover {
 #your-quotes .nav-tabs li a {
     color: #000;
     background: rgba(0, 0, 0, 0);
+    width: 100%;
+    float: left;
 }
 
 #your-quotes .l1 {
@@ -3135,6 +3152,24 @@ img.avt.left {
     font-size: 15px;
 }
 
+.go-back {
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.go-back a {
+    color: #fff;
+    background: #fbad33;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.go-back a:hover {
+    background: #ed1a3b;
+}
+
 .all-step {
     float: left;
     padding: 0;
@@ -3312,14 +3347,17 @@ p.t-small {
 
 .drop-box .x-remove {
     position: absolute;
-    margin-left: -10px;
     font-size: 15px;
     cursor: pointer;
+    color: #fff;
+    margin-left: -10px;
+    background: #000;
+    border-radius: 50%;
+    padding: 0px 6px;
 }
 
 .drop-box .x-remove:hover {
-    color: #f44;
-	text-decoration: none;
+    background: #ed1a3b;
 }
 
 .drop-link {
@@ -3333,14 +3371,16 @@ p.t-small {
 }
 
 .video .embed .x-remove {
-    margin-left: -10px;
     font-size: 15px;
     cursor: pointer;
+    color: #fff;
+    background: #000;
+    border-radius: 50%;
+    padding: 0px 5px;
 }
 
-.video .embed .x-remove:hover {
-    color: #f44;
-	text-decoration: none;
+.video .embed .x-remove:hover {    
+    background: #ed1a3b;
 }
 
 .video .col-xs-1 {
@@ -4104,6 +4144,11 @@ footer li {
     margin-left: 0;
 }
 
+#entertainer .col-sm-4.col-md-4 {
+    width: 100%;
+    float: left;
+}
+
 #entertainer-dash .title {
     height: 165px;
 }
@@ -4303,6 +4348,14 @@ span.tnp {
     margin: 15px 0;
 }
 
+#chat-icon {
+    text-align: right;
+}
+
+#chat-icon img {
+    width: 60%;
+}
+
 }
 
 
@@ -4327,8 +4380,15 @@ span.tnp {
 }
 
 
-@media screen and (max-width: 650px)
+@media screen and (max-width: 683px)
 {
+	#find .division a img {
+		width: 50%;
+		float: left;
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
 }
 
 

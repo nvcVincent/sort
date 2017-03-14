@@ -15,7 +15,7 @@
 	<div class="title">
 		<div class="container">
 			<h1><span class="user-name">SORTVILLE</span>'S DETAILS</h1>
-			<div class="single-star-rating"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+			<div class="single-star-rating"><span data-toggle="modal" data-target="#star-info"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></span>
 			</div>
 		</div>
 	</div>
@@ -176,7 +176,7 @@
 					  <div class="col-md-4 pass">				
 						  <div class="form-group">
 							<label for="text">Postcode<span class="red">*</span></label>
-							<input type="number" class="form-control" id="postcode" required>
+							<input type="text" class="form-control" id="postcode" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
 						  </div>
 					  </div>
 					  
@@ -202,14 +202,14 @@
 					  
 					  <div class="col-md-12 hp">
 						<label for="phone" class="phone">Phone <span class="red">*</span></label>
-							<input type="number" class="form-control" id="phone" required>
+							<input type="text" class="form-control" id="phone" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
 						
 						<p class="t-small">If possible, enter your mobile phone number. Job request, notifications and booking information can be sent through SMS. Don't miss out on them!</p>	
 					  </div>
 					  
 					  <div class="col-md-12 hp">
 						<label for="phone" class="phone">Secondary phone number <span class="red">*</span></label>
-							<input type="number" class="form-control" id="phone" required>
+							<input type="text" class="form-control" id="phone" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
 						
 						<p class="t-small">If possible, enter your mobile phone number. Job request, notifications and booking information can be sent through SMS. Don't miss out on them!</p>	
 					  </div>
@@ -299,17 +299,10 @@
 						<input type="email" class="form-control" id="email" required>
 					  </div>
 					  
-					  <div class="col-md-6 pass">				
+					  <div class="col-md-12 pass">				
 						  <div class="form-group">
 							<label for="text">Password: <span class="red">*</span></label>
 							<input type="password" class="form-control" id="password" required>
-						  </div>
-					  </div>
-					  
-					  <div class="col-md-6 c-pass">				
-						  <div class="form-group">
-							<label for="text">Confirm password: <span class="red">*</span></label>
-							<input type="password" class="form-control" id="confirm-password">
 						  </div>
 					  </div>
 					  
@@ -365,6 +358,18 @@
 		  </div>
 
 		</div>
+
+<!-- Star Rate Popup -->
+<div id="star-info" class="modal fade" role="dialog">
+	<div class="star-rate-info modal-dialog">
+	
+		<div class="container">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			Info Info Info Info Info			
+		</div>
+		
+	</div>
+</div>	
 
 	</div>
 </section>
