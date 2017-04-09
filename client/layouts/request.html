@@ -1,7 +1,7 @@
 <template name="RequestLayout">
 
 <body>
-  {{> navigation}}
+  {{> afteruserloginnavigation}}
   {{> request}}
   {{> footer}}
 </body>
@@ -239,7 +239,7 @@
 		
 		<div class="sec">
 			<p>5. Estimated number of attendees: </p>
-				<input type="text" class="form-control" id="number-attendee" placeholder="eg. 50" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+				<input type="number" class="form-control" id="number-attendee" placeholder="eg. 50" size="5" maxlength="5" />
 		</div>
 		
 		<div class="sec">
@@ -266,9 +266,13 @@
 		
 		<div class="sec date">
 			<p>8. When do you need it? </p>
-				<input type="text" id="datepicker">
+				<div class="date-left">
+					<input type='text' class="form-control" id='datetimepicker' />
+				</div>
 					<span>~</span>
-				<input type="text" id="datepickerend">				
+				<div class="date-right">
+					<input type='text' class="form-control" id='datetimepicker2' />
+				</div>			
 				<br/><br/>
 				<input type="text" id="datepick" placeholder="If you're unsure, give an estimate">
 		</div>	

@@ -2007,6 +2007,10 @@ a.reset-button:hover {
 	width: 50%;
 }
 
+#request .date-left .form-control, #request .date-right .form-control {
+	height: 30px
+}
+
 textarea {
     resize: vertical;
 }
@@ -2373,6 +2377,14 @@ section#user {
     background: #ed1a3b;
 }
 
+#user-dash #new .col-md-12 .col-xs-6.col-sm-4 {
+    padding: 0 !important;
+}
+
+#user-dash #new .col-md-12 img {
+    width: 100%;
+}
+
 .upload-img {
     margin: 30px 0;
 }
@@ -2463,6 +2475,8 @@ input#area-code {
     background: #ed1a3b;
     color: white;
     margin-top: 10px;
+	width: 100%;
+	float: left;
 }
 
 .closebtn {
@@ -3025,6 +3039,10 @@ a.comp-web {
     text-decoration: none;
 }
 
+a.comp-web:hover {
+    color: #000;
+}
+
 .single-comp-price {
     float: right;
     text-align: right;
@@ -3152,6 +3170,12 @@ img.avt.left {
     font-size: 15px;
 }
 
+.go-back.other {
+    margin-top: 0;
+    width: 50%;
+    float: right;
+}
+
 .go-back {
     text-align: right;
     margin-right: 20px;
@@ -3266,6 +3290,14 @@ li.code {
 .entertainer-fb a {
     color: #ed1a3b;
     text-decoration: none;
+}
+
+.entertainer-web a:hover {
+    color: #333;
+}
+
+.entertainer-fb a:hover {
+    color: #333;
 }
 
 .photos img.img-fluid {

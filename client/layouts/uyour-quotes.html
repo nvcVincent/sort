@@ -1,7 +1,7 @@
 <template name="YourQuotesLayout">
 
 <body>
-  {{> afterloginnavigation}}
+  {{> afteruserloginnavigation}}
   {{> yourquotes}}
   {{> footer}}
 </body>
@@ -13,6 +13,8 @@
 <section id="your-quotes" class="dashboard swrap">
 	
 	<div class="container">
+		
+		<div class="go-back other"><a href="#">Go Back</a></div>
 		<h3>Your quotes...</h3>
 	
 		<div class="col-md-4">
@@ -114,7 +116,7 @@
 					
 					<div class="mobile">
 					
-										<!-- Slider -->
+						<!-- Slider -->
 						<div id="what-slider" class="carousel slide mobile">
 
 							<!-- Wrapper for Slides -->
@@ -315,8 +317,8 @@
 					
 					<div class="mobile">
 					
-										<!-- Slider -->
-						<div id="what-slider" class="carousel slide mobile">
+						<!-- Slider -->
+						<div id="what-slider2" class="carousel slide mobile">
 
 							<!-- Wrapper for Slides -->
 							<div class="carousel-inner">
@@ -349,10 +351,10 @@
 							</div>
 
 							<!-- Controls -->
-							<a class="left carousel-control" href="#what-slider" data-slide="prev">
+							<a class="left carousel-control" href="#what-slider2" data-slide="prev">
 								<span class="icon-prev"></span>
 							</a>
-							<a class="right carousel-control" href="#what-slider" data-slide="next">
+							<a class="right carousel-control" href="#what-slider2" data-slide="next">
 								<span class="icon-next"></span>
 							</a>
 

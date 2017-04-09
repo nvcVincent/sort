@@ -47,13 +47,13 @@ mobile-experience@1.0.4
 mobile-status-bar@1.0.12
 modules@0.7.6_1
 modules-runtime@0.7.6_1
+momentjs:moment@2.8.4
 mongo@1.1.13
 mongo-id@1.0.5
 npm-mongo@2.2.11_1
 observe-sequence@1.0.13
 ordered-dict@1.0.8
 promise@0.8.7
-rajit:bootstrap3-datepicker@1.6.4
 random@1.0.10
 reactive-dict@1.1.8
 reactive-var@1.0.10
@@ -70,6 +70,7 @@ templating-compiler@1.2.15
 templating-runtime@1.2.15
 templating-tools@1.0.5
 tracker@1.1.0
+tsega:bootstrap3-datetimepicker@4.17.37_1
 ui@1.0.12
 underscore@1.0.9
 url@1.0.10

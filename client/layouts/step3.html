@@ -35,7 +35,7 @@
 			  </div>
 			  <div class="form-group">
 				<label for="formGroupExampleInput">State <span class="star-required">*</span></label>
-				<input type="text" class="form-control" id="formGroupExampleInput" placeholder=" ">
+				<input type="text" class="form-control" id="formGroupExampleInput" placeholder=" " required>
 			  </div>
 			  <div class="form-group">
 				<label for="formGroupExampleInput2">Website</label>
@@ -50,21 +50,21 @@
 			<div class="col-sm-6">
 				<p>Which areas are you willing to provide your services <span class="star-required">*</span></p>
 				
-				<div class="form-group">
+				<div class="form-group options">
 				  <label class="custom-control custom-checkbox">
-					<input type="checkbox" class="custom-control-input">
+					<input type="checkbox" name="location" class="custom-control-input" required>
 					<span class="custom-control-indicator"></span>
 					<span class="custom-control-description">Kuala Lumpur</span>
 				  </label>
 					
 				  <label class="custom-control custom-checkbox">
-					<input type="checkbox" class="custom-control-input">
+					<input type="checkbox" name="location" class="custom-control-input" required>
 					<span class="custom-control-indicator"></span>
 					<span class="custom-control-description">Johor</span>
 				  </label>
 				  
 				  <label class="custom-control custom-checkbox">
-					<input type="checkbox" class="custom-control-input">
+					<input type="checkbox" name="location" class="custom-control-input" required>
 					<span class="custom-control-indicator"></span>
 					<span class="custom-control-description">Penang</span>
 				  </label>
@@ -82,4 +82,5 @@
 		
 	</div>
 </section>
+
 </template>
